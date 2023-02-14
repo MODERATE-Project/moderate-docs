@@ -1,2 +1,3 @@
-# moderate-docs
-Central documentation site for the MODERATE platform
+# MODERATE Docs
+
+Central documentation site for the MODERATE platform.
