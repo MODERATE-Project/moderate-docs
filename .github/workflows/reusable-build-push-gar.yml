@@ -1,0 +1,66 @@
+# Based on: https://gist.github.com/palewire/12c4b2b974ef735d22da7493cf7f4d37
+
+name: Reusable workflow to build and push an image to Google Cloud Artifact Registry
+
+on:
+  workflow_call:
+    inputs:
+      project_id:
+        required: true
+        type: string
+      gar_location:
+        required: true
+        type: string
+      gar_repo:
+        required: true
+        type: string
+      image_name:
+        required: true
+        type: string
+    secrets:
+      # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+      wif_provider:
+        required: true
+      # e.g. - my-service-account@my-project.iam.gserviceaccount.com
+      wif_service_account:
+        required: true
+
+jobs:
+  docker-release:
+    name: Docker release to Google Artifact Registry
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: "read"
+      id-token: "write"
+
+    steps:
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - id: auth
+        name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v0
+        with:
+          token_format: access_token
+          workload_identity_provider: "${{ secrets.wif_provider }}"
+          service_account: "${{ secrets.wif_service_account }}"
+          access_token_lifetime: 1200s
+
+      - name: Login to Artifact Registry
+        uses: docker/login-action@v2.1.0
+        with:
+          registry: "${{ inputs.gar_location }}-docker.pkg.dev"
+          username: oauth2accesstoken
+          password: ${{ steps.auth.outputs.access_token }}
+
+      - id: docker-push-tagged
+        name: Tag Docker image and push to Google Artifact Registry
+        uses: docker/build-push-action@v3.3.1
+        with:
+          push: true
+          tags: |
+            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:$GITHUB_REF_NAME
+            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:$GITHUB_SHA
+            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:latest
