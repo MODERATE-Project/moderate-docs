@@ -61,6 +61,6 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:$GITHUB_REF_NAME
-            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:$GITHUB_SHA
+            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:${{ github.ref_name }}
+            ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:${{ github.sha }}
             ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:latest
