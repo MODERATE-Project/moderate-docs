@@ -1,6 +1,6 @@
 # Based on: https://gist.github.com/palewire/12c4b2b974ef735d22da7493cf7f4d37
 
-name: Reusable workflow to build and push an image to Google Cloud Artifact Registry
+name: Reusable workflow to build and push an image to Google Artifact Registry (GAR)
 
 on:
   workflow_call:
