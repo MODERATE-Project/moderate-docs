@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Welcome
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! warning "MODERATE is still in development"
 
-## Commands
+    Please be aware that the project is still in the development phase. As a result, the documentation may be subject to breaking changes without prior notice or may be outdated.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Welcome to the documentation of the MODERATE platform :wave:
 
-## Project layout
+The MODERATE project is funded under the Horizon Europe program. Its main objective is to develop services and tools that will focus on building-related data sources and datasets.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Please note that this documentation is intended for users with a technical background, such as data scientists and software developers. [You can check our main site for further information](https://moderate-project.eu/).
