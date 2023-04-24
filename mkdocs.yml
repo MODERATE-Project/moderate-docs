@@ -2,6 +2,8 @@ site_name: MODERATE Platform
 repo_url: https://github.com/MODERATE-Project/moderate-docs
 theme:
   name: material
+  features:
+    - content.code.annotate 
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -22,6 +24,8 @@ theme:
         name: Switch to system preference
 markdown_extensions:
   - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
@@ -31,3 +35,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
