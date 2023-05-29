@@ -3,7 +3,7 @@ repo_url: https://github.com/MODERATE-Project/moderate-docs
 theme:
   name: material
   features:
-    - content.code.annotate 
+    - content.code.annotate
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -22,6 +22,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+extra_javascript:
+  - javascripts/tablesort.dist.min.js
+  - javascripts/tablesort.js
 markdown_extensions:
   - admonition
   - pymdownx.inlinehilite
