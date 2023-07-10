@@ -37,6 +37,8 @@ Write a [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_b
 
 For example, this is the [Dockerfile](https://github.com/MODERATE-Project/moderate-docs/blob/main/Dockerfile) used to build the `moderate-docs` image, which is the documentation website you are currently reading.
 
+This Dockerfile should be contained in the repository of the application or service. It should be located in the root directory of the repository and named `Dockerfile`.
+
 ### 👷‍♂️ Step 3: Continuous Integration
 
 **Who**: _Developer_ or _Administrator_
@@ -74,12 +76,40 @@ jobs:
 
 **Who**: _Administrator_
 
-Create the [Terraform resources](https://github.com/MODERATE-Project/moderate-infrastructure) that define the Kubernetes resources, which, in turn, represent the deployment of the web application or service.
+Create the [Terraform resources](https://developer.hashicorp.com/terraform/intro) that define the Kubernetes resources, which, in turn, represent the deployment of the web application or service.
 
-Once the application is defined as Terraform resources within the [moderate-infrastructure repository](https://github.com/MODERATE-Project/moderate-infrastructure), it can seamlessly integrate into the platform's life cycle. This enables effortless deployment, destruction, and re-creation with minimal effort.
+Once the application is defined as Terraform resources within the [moderate-infrastructure repository](https://github.com/MODERATE-Project/moderate-infrastructure), it can seamlessly integrate into the platform's life cycle. This enables deployment, destruction, and re-creation with minimal effort.
 
 ### ☁️ Step 5: Deployment
 
 **Who**: _Administrator_
 
 Deploy these Terraform resources to MODERATE's cloud platform.
+
+## Frequently Asked Questions
+
+### Am I restricted in the technology stack that I can use?
+
+No. You can use any technology stack that you want. However, you should be aware that the administrator won't know the internal details of your application, and will thus be unable to help you with issues outside of integration with the platform and deployment.
+
+### Are there any examples of applications or services that have already been integrated into the platform?
+
+Sure! Take a look at the [`moderate-platform-api`](https://github.com/MODERATE-Project/moderate-platform-api) repository.
+
+### What should I do to deploy the databases or other services that my application depends on?
+
+The administrator will take care of deploying the databases and other services that your application depends on. You should simply **document the configuration parameters that your application expects to find in the environment variables**.
+
+[You can get in touch with the administrator](https://github.com/MODERATE-Project) to discuss the requirements of your application and the best way to integrate it into the platform.
+
+### Do I have to do something specific for my container to run on Kubernetes?
+
+No. The containers that you build with your Dockerfile will run on Kubernetes without any modifications. The administrator will take care of creating the Kubernetes resources that will run your containers.
+
+### Will new versions of my application be automatically deployed?
+
+No for the time being. The administrator will take care of manually deploying new versions of your application. However, we will probably move to a Continuous Deployment model in the future.
+
+### My application is offline. What should I do?
+
+Please note that the cloud platform will be intermittently unavailable during the development phase. If you need to test your application for a continued period of time, please contact the administrator to ensure that the platform is available.
