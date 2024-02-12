@@ -28,8 +28,13 @@ sequenceDiagram
     participant DIVA
     participant S3 as Object Storage
     USER->>API: Requests validation of dataset
-    DIVA->>API: Retrieves list of datasets that are pending validation
-    API->>DIVA: Sends the list of datasets
+    alt DIVA is the orchestrator
+        DIVA->>API: Retrieves list of datasets that are pending validation
+        API->>DIVA: Responds with the list of datasets
+    else the platform is the orchestrator
+        API->>DIVA: Requests data validation for a dataset
+        DIVA->>API: Acknowledges the request
+    end
     alt access to object storage via the HTTP API
         DIVA->>API: Requests download URL for the dataset
         API->>DIVA: Responds with pre-signed URL for download 
@@ -49,4 +54,5 @@ Some key points to consider:
 * There are two possible alternatives for downloading datasets, depending on what is more convenient for the DIVA:
     * Access to the object storage via the HTTP API, which provides pre-signed URLs for downloading the datasets.
     * Direct access to the object storage service, using the dataset metadata to fetch the datasets directly over the S3 protocol.
+* There are also two possible alternatives for triggering the data quality pipeline: either DIVA periodically checks the API, or the platform pushes requests to DIVA, which then executes the pipelines on demand.
 * Data quality pipeline runs could be either requested manually by end users via the MODERATE platform web UI or triggered by periodic jobs scheduled to run at specific intervals.
