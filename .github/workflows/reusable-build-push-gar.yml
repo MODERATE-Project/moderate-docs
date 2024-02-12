@@ -34,10 +34,6 @@ jobs:
     name: Docker release to Google Artifact Registry
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ${{ inputs.working_dir }}
-
     permissions:
       contents: read
       id-token: write
@@ -65,8 +61,9 @@ jobs:
 
       - id: docker-push-tagged
         name: Tag Docker image and push to Google Artifact Registry
-        uses: docker/build-push-action@v3.3.1
+        uses: docker/build-push-action@v5
         with:
+          context: ${{ inputs.working_dir }}
           push: true
           tags: |
             ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:${{ github.ref_name }}
