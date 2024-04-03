@@ -56,3 +56,99 @@ Some key points to consider:
     * Direct access to the object storage service, using the dataset metadata to fetch the datasets directly over the S3 protocol.
 * There are also two possible alternatives for triggering the data quality pipeline: either DIVA periodically checks the API, or the platform pushes requests to DIVA, which then executes the pipelines on demand.
 * Data quality pipeline runs could be either requested manually by end users via the MODERATE platform web UI or triggered by periodic jobs scheduled to run at specific intervals.
+
+## How to download a dataset using the MODERATE API
+
+This is a specific example of how to implement one of the aforementioned alternatives for downloading datasets, namely the one where access is via the HTTP API, which in turn provides presigned URLs for downloading the dataset files.
+
+In this example, we're going to use the public MODERATE API URL, which is deployed at `https://api.gw.moderate.cloud`
+
+> [!WARNING]
+> Please note that the public deployment of the MODERATE platform is intermittently online for the time being.
+
+The first thing that we need to do is get an access token, which is obtained by calling the `/api/token` endpoint and passing our username and password.
+
+```console
+$ curl --silent --location 'https://api.gw.moderate.cloud/api/token' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'username=<username>' --data-urlencode 'password=<password>' | jq
+{
+  "access_token": "<jwt-access-token>",
+  "expires_in": 300,
+  "refresh_expires_in": 1800,
+  "refresh_token": "<jwt-refresh-token>",
+  "token_type": "Bearer",
+  "not-before-policy": 0,
+  "session_state": "<session-uuid>",
+  "scope": "profile email"
+}
+```
+
+In MODERATE, there are two dataset entities:
+
+* **Asset objects** are the actual specific dataset files that users upload to the platform.
+* **Assets** are logical groupings of *asset objects*. An *asset* may have several *asset objects*. All *asset objects* in a given *asset* should have some form of relationship or connection.
+
+For example, an *asset* could be the energy consumption of a building, and the *asset objects* in that *asset* could be dataset files for specific devices within that building.
+
+We can browse the catalogue of assets by calling the `/asset` endpoint. The following request does not apply any filters and limits the results to one, so we will retrieve the first asset:
+
+```console
+$ curl --silent --location 'https://api.gw.moderate.cloud/asset?limit=1' --header 'Authorization: Bearer <jwt-access-token>' | jq
+[
+  {
+    "uuid": "4477de94-4ffc-490a-ba02-93f0e71db80c",
+    "name": "One Asset",
+    "meta": null,
+    "id": 1,
+    "objects": [
+      {
+        "key": "andres.garcia-assets/weather-0558e356-355b-4379-955b-dfe5023da2af.parquet",
+        "tags": null,
+        "created_at": "2024-04-03T10:27:26.247281",
+        "series_id": null,
+        "sha256_hash": "aecc871c3aaac446c60009a2902c2a714a35efd117b440f79f6d9c3856261f8e",
+        "proof_id": null,
+        "id": 1
+      },
+      {
+        "key": "andres.garcia-assets/customers-100000-7f596126-4771-45e1-9e8a-237e3635eb7c.csv",
+        "tags": null,
+        "created_at": "2024-04-03T10:33:05.948939",
+        "series_id": null,
+        "sha256_hash": "446d645458479d841c8c0239f6d4f882e4735e63db21ff980c53058eabc6beda",
+        "proof_id": null,
+        "id": 4
+      },
+      {
+        "key": "andres.garcia-assets/flights-1m-48653f22-0d5c-4f10-aa2b-81ef35959445.parquet",
+        "tags": null,
+        "created_at": "2024-04-03T10:33:20.951760",
+        "series_id": null,
+        "sha256_hash": "71ccd0758a73ac9d89ccda6107e3cbfc7e4cd3249d3766f881e48f7513e601fd",
+        "proof_id": null,
+        "id": 5
+      }
+    ],
+    "access_level": "public"
+  }
+]
+```
+
+Now that we know the ID of the asset that we want to download, we can call the `/asset/<id>/download-urls` endpoint, which will return a list of presigned download URLs. These URLs enable any user (e.g., a software service in the DIVA) to download the asset object files in a time-limited fashion by embedding the credentials into the download URL itself.
+
+```console
+$ curl --silent --location 'https://api.gw.moderate.cloud/asset/1/download-urls' --header 'Authorization: Bearer <jwt-access-token>' | jq
+[
+  {
+    "key": "andres.garcia-assets/weather-0558e356-355b-4379-955b-dfe5023da2af.parquet",
+    "download_url": "https://storage.googleapis.com/moderate-platformapi/andres.garcia-assets/weather-0558e356-<...>"
+  },
+  {
+    "key": "andres.garcia-assets/customers-100000-7f596126-4771-45e1-9e8a-237e3635eb7c.csv",
+    "download_url": "https://storage.googleapis.com/moderate-platformapi/andres.garcia-assets/customers-100000-7f596126-<...>"
+  },
+  {
+    "key": "andres.garcia-assets/flights-1m-48653f22-0d5c-4f10-aa2b-81ef35959445.parquet",
+    "download_url": "https://storage.googleapis.com/moderate-platformapi/andres.garcia-assets/flights-1m-48653f22-<...>"
+  }
+]
+```
