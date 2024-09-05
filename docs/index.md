@@ -6,6 +6,6 @@
 
 Welcome to the documentation of the MODERATE platform :wave:
 
-The MODERATE project is funded under the Horizon Europe program. Its main objective is to develop services and tools that will focus on building-related data sources and datasets.
+The MODERATE project is funded under the Horizon Europe program. Its main objective is to develop services and tools that focus on building-related data sources and datasets.
 
-Please note that this documentation is intended for users with a technical background, such as data scientists and software developers. [You can check our main site for further information](https://moderate-project.eu/).
+If you want more context on the MODERATE project, including who is part of the MODERATE team and access to further documentation, [you can check our main site for more information](https://moderate-project.eu/).
