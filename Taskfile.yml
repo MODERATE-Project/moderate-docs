@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: "3"
+
+env:
+  VENV_PATH: "{{.ROOT_DIR}}/.venv"
+
+tasks:
+  create-virtualenv:
+    desc: Provisions the virtual environment
+    cmds:
+      - rm -fr {{.VENV_PATH}}
+      - virtualenv {{.VENV_PATH}}
+      - "{{.VENV_PATH}}/bin/pip install --upgrade pip"
+      - "{{.VENV_PATH}}/bin/pip install -r {{.ROOT_DIR}}/requirements.txt"
+    status:
+      - test -f {{.VENV_PATH}}/bin/python
+
+  mkdocs-serve:
+    deps:
+      - create-virtualenv
+    desc: Start the MkDocs development server
+    cmds:
+      - "{{.VENV_PATH}}/bin/mkdocs serve"
