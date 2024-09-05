@@ -1,4 +1,4 @@
-FROM python:3.9 as builder
+FROM python:3.10 AS builder
 WORKDIR /app/
 COPY . .
 RUN pip install -r requirements.txt
