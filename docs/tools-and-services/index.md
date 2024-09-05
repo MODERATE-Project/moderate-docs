@@ -10,4 +10,4 @@ Local Energy Communities (LECs) are pivotal in advancing building decarbonizatio
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/lec-location-assessment-tool)
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://lec.moderate.cloud/)
-- :fontawesome-solid-book: &nbsp; [Documentation](lec)
+- :fontawesome-solid-book: &nbsp; [Documentation](lec.md)
