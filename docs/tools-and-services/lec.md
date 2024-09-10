@@ -1,7 +1,6 @@
 ---
 title: LEC tool
 ---
-
 # Local energy communities assessment tool
 
 !!! abstract "Abstract"
@@ -10,7 +9,13 @@ title: LEC tool
 
 ## Introduction
 
-Provide more context about the background of this tool or service. What problem is it trying to solve? How does it contribute to the ecosystem? Why should a user invest time in learning about this tool or service, and what benefits do they gain from using it?
+> Provide more context about the background of this tool or service. What problem is it trying to solve? How does it contribute to the ecosystem? Why should a user invest time in learning about this tool or service, and what benefits do they gain from using it?
+
+A Local Energy Community (LEC) is a legal entity where various actors collaborate to meet their energy needs through shared production, transmission, and consumption. LECs play a pivotal role in the transition towards decarbonizing buildings, promoting social interaction, and integrating renewable energy sources. However, one of the main challenges in establishing a successful LEC is identifying the geographic areas where these communities can thrive. This is where the tool comes into play.
+
+The tool is designed to solve the complex problem of determining suitable areas for LECs by analyzing diverse datasets, such as energy consumption, cadastral information, and infrastructure details. Using machine learning techniques, it processes this information to provide actionable insights that help users define areas where LECs can be effectively implemented.
+
+By enabling the creation of LECs, the tool contributes to a more sustainable energy ecosystem, supporting decarbonization efforts and the wider adoption of renewable energy. It helps streamline energy management, making energy production and consumption more efficient within communities. Users who invest time in learning and using this tool gain the ability to identify optimal locations for LECs, contributing to environmental sustainability and community engagement, while simplifying a typically complex and data-intensive process.
 
 ## User Guide
 
