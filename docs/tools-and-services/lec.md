@@ -17,7 +17,7 @@ The tool is designed to solve the complex problem of determining suitable areas 
 
 By enabling the creation of LECs, the tool contributes to a more sustainable energy ecosystem, supporting decarbonization efforts and the wider adoption of renewable energy. It helps streamline energy management, making energy production and consumption more efficient within communities. Users who invest time in learning and using this tool gain the ability to identify optimal locations for LECs, contributing to environmental sustainability and community engagement, while simplifying a typically complex and data-intensive process.
 
-The tool is currently accessible from this URL: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
+The tool is currently accessible at the following URL: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
 
 ## User Guide
 
@@ -27,7 +27,7 @@ The main view of the web app shows a map of a country, currently Spain, with all
 
 <figure markdown="span">
   ![Main view of the LEC tool](../imgs/lec-tool/lec-main-view.png){ width="800" }
-  <figcaption>First look of the tool. Each polygon represents a municipality of Spain.</figcaption>
+  <figcaption>First look of the tool. Each polygon represents a municipality in Spain.</figcaption>
 </figure>
 
 Currently, only the municipality of Crevillent contains building data.
@@ -37,41 +37,46 @@ Currently, only the municipality of Crevillent contains building data.
   <figcaption>Selecting a municipality. Notice that additional buttons appear, and the table at the bottom contains data.</figcaption>
 </figure>
 
-When focused on a municipality that contains data, the bottom of the screen will show a table with the first 10 buildings ranked by greatest solar potential radiation. That's the default sorting criterion, but the user can change it in two different ways, described in the next sections.
+When focused on a municipality that contains data, the bottom of the screen displays a table with the first 10 buildings ranked by solar potential radiation. This is the default sorting criterion, but the user can change it in two ways, which will be explained in the next sections.
 
-The main functionalities are:
+The main functionalities of the tool are:
 
-- View building data in a table format and manipulate its sorting criteria.
-- View building data on a map, with colors representing potential radiation. This includes access to cadastral information.
-- Filter buildings by drawing a polygon box on the map.
-- Save or print a document containing the current state of both the table data and the map view.
-- Generate a personalized report, describing a general overview of the municipality and then a more detailed report with the data of the selected municipality.
+- Viewing building data in a table format and manipulating its sorting criteria.
+- Viewing building data on a map, with colors representing potential solar radiation. This also provides access to cadastral information.
+- Filtering buildings by drawing a polygon box on the map.
+- Saving or printing a document containing the current state of both the table data and the map view.
+- Generating a personalized report that provides an overview of the municipality and a detailed analysis of the selected buildings.
 
-In the following sections, we describe in detail how the user can achieve this.
+In the following sections, we describe in detail how the user can achieve these actions.
 
 ### The Map View
 
-As described before, the user can select any municipality on the map. If the selected municipality contains building data, the interface will show additional buttons and gradient colors, as shown in the image below.
+As mentioned before, the user can select any municipality on the map. If the selected municipality contains building data, the interface will show additional buttons and gradient colors, as shown in the image below.
 
 <figure markdown="span">
-  ![Selecting a municipality](../imgs/lec-tool/lec-buildings-gradient.png){ width="800" }
-  <figcaption>Zooming in, a color gradient on the map indicates relative potential radiation of the buildings.</figcaption>
+  ![Building view and gradient color](../imgs/lec-tool/lec-buildings-gradient.png){ width="800" }
+  <figcaption>Zooming in, a color gradient on the map indicates the relative solar potential of the buildings.</figcaption>
 </figure>
 
-The user can then click on a row of the table to center the view on that concrete building, or simple navigete the map and click it. The building will show a diagonal hatch pattern indicating its location and popover on the right side will show the building's information and a button to redirect to the specific cadastre informetion in the oficial website.
-
-Also notice that if the user zooms in enough, the centroids of the buildings will appear. His indicates the comparision mode, where the user can hover any building to see its information. 
-
-The following image ilustrates all this funcionalities
+The user can click on a row in the table to center the view on a specific building, or navigate the map and click on it directly. The selected building will display a diagonal hatch pattern to indicate its location, and a popover on the right side will provide detailed building information and a button to redirect the user to the building's page within the official cadastral website.
 
 <figure markdown="span">
-  ![Selecting a municipality](../imgs/lec-tool/lec-analysing-buildings.png){ width="800" }
-  <figcaption>Zooming in, a color gradient on the map indicates relative potential radiation of the buildings.</figcaption>
+  ![Building cadaster data](../imgs/lec-tool/lec-cadaster-data.jpg){ width="800" }
+  <figcaption>Building cadaster data</figcaption>
+</figure>
+
+Additionally, if the user zooms in enough, the centroids of the buildings will appear. This activates the comparison mode, where the user can hover over any building to see its information.
+
+The following image illustrates these functionalities:
+
+<figure markdown="span">
+  ![Analysing buildings](../imgs/lec-tool/lec-analysing-buildings.png){ width="800" }
+  <figcaption>Analyzing buildings and their solar potential</figcaption>
 </figure>
 
 ### Changing Sorting Criteria
 
-As mentioned before, the default sorting is by potential radiation. The easiest way to change the order of the table is by clicking on the column headers.
+As mentioned before, the default sorting is by solar potential radiation. The user can change the order of the table by clicking on the column headers.
 
 ### Filtering Buildings
 
@@ -82,16 +87,6 @@ TODO
 TODO
 
 ---
-
-<figure markdown="span">
-  ![Building cadaster data](../imgs/lec-tool/lec-cadaster-data.jpg){ width="800" }
-  <figcaption>Building cadaster data</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Building cadaster data](../imgs/lec-tool/lec-select-building.jpg){ width="800" }
-  <figcaption>Selecting a building</figcaption>
-</figure>
 
 !!! info "Known limitations and issues"
 
