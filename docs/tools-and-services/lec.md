@@ -39,8 +39,6 @@ Currently, only the municipality of Crevillent contains building data.
 
 When focused on a municipality that contains data, the bottom of the screen will show a table with the first 10 buildings ranked by greatest solar potential radiation. That's the default sorting criterion, but the user can change it in two different ways, described in the next sections.
 
-#TODO: image of building data on the map
-
 The main functionalities are:
 
 - View building data in a table format and manipulate its sorting criteria.
@@ -55,17 +53,33 @@ In the following sections, we describe in detail how the user can achieve this.
 
 As described before, the user can select any municipality on the map. If the selected municipality contains building data, the interface will show additional buttons and gradient colors, as shown in the image below.
 
+<figure markdown="span">
+  ![Selecting a municipality](../imgs/lec-tool/lec-buildings-gradient.png){ width="800" }
+  <figcaption>Zooming in, a color gradient on the map indicates relative potential radiation of the buildings.</figcaption>
+</figure>
+
+The user can then click on a row of the table to center the view on that concrete building, or simple navigete the map and click it. The building will show a diagonal hatch pattern indicating its location and popover on the right side will show the building's information and a button to redirect to the specific cadastre informetion in the oficial website.
+
+Also notice that if the user zooms in enough, the centroids of the buildings will appear. His indicates the comparision mode, where the user can hover any building to see its information. 
+
+The following image ilustrates all this funcionalities
+
+<figure markdown="span">
+  ![Selecting a municipality](../imgs/lec-tool/lec-analysing-buildings.png){ width="800" }
+  <figcaption>Zooming in, a color gradient on the map indicates relative potential radiation of the buildings.</figcaption>
+</figure>
+
 ### Changing Sorting Criteria
 
 As mentioned before, the default sorting is by potential radiation. The easiest way to change the order of the table is by clicking on the column headers.
 
 ### Filtering Buildings
 
-#TODO
+TODO
 
 ### Report Generation
 
-#TODO
+TODO
 
 ---
 
