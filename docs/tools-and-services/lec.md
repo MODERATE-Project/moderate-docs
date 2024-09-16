@@ -82,7 +82,7 @@ As mentioned before, the default sorting is by solar potential radiation. The us
 Inside this panel, the user can drag each variable to the desired position. The order of the variables determines the importance. Thus, each variable is given a weight, and the buildings will be sorted by the weighted sum of the variables.
 
 <figure markdown="span">
-  ![Sorting criteria panel](../imgs/lec-tool/lec-sort-criteria-panel.png){ width="800" }
+  ![Sorting criteria panel](../imgs/lec-tool/lec-sort-criteria-panel.png){ width="460" }
   <figcaption>Sorting criteria panel, located at the bottom right of the screen</figcaption>
 </figure>
 
@@ -117,6 +117,6 @@ To generate the report and save it to their computer, users can click the "Gener
 
 ## References
 
-- Access to the tool: https://lec.moderate.cloud
+- Access to the tool: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
 
-- Spanish cadastre website: https://www.sedecatastro.gob.es/
+- Spanish cadastre website: [https://www.sedecatastro.gob.es](https://www.sedecatastro.gob.es)
