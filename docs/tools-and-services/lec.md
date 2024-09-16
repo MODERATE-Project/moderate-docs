@@ -6,11 +6,12 @@ title: LEC tool
 
 !!! abstract "Abstract"
 
-    What is this tool for? What are the most interesting features?
+    The Local Energy Communities (LEC) Assessment Tool is designed to help users identify optimal locations for establishing Local Energy Communities. By analyzing various datasets, including energy consumption, cadastral data, and infrastructure information, the tool provides insights into areas where LECs can be successfully implemented.
+
+    Using machine learning techniques, the tool processes complex data to evaluate building potential, focusing on solar energy capabilities. Users can interact with a map-based interface, filter buildings, generate reports, and obtain detailed building and cadastral information. The tool aims to facilitate the development of LECs, supporting energy decarbonization and the transition to sustainable energy systems.
+
 
 ## Introduction
-
-> Provide more context about the background of this tool or service. What problem is it trying to solve? How does it contribute to the ecosystem? Why should a user invest time in learning about this tool or service, and what benefits do they gain from using it?
 
 A Local Energy Community (LEC) is a legal entity where various actors collaborate to meet their energy needs through shared production, transmission, and consumption. LECs play a pivotal role in the transition toward decarbonizing buildings, promoting social interaction, and integrating renewable energy sources. However, one of the main challenges in establishing a successful LEC is identifying the geographic areas where these communities can thrive. This is where the tool comes into play.
 
@@ -21,8 +22,6 @@ By enabling the creation of LECs, the tool contributes to a more sustainable ene
 The tool is currently accessible at the following URL: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
 
 ## User Guide
-
-> This section explains how the tool or service is used from an end-user perspective. What should the user take into account when running the tool? Are there any prerequisites, such as dependency installation or registration? If the tool requires datasets as input, specify the requirements for these datasets, including the expected data format, column types, and any other relevant details.
 
 The main view of the web app shows a map of a country, currently Spain, with all its municipalities. The user can select any municipality to center the screen for close examination. However, only those municipalities with a blue background contain building data.
 
