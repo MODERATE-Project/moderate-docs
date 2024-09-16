@@ -30,14 +30,14 @@ The main view of the web app shows a map of a country, currently Spain, with all
   <figcaption>First look of the tool. Each polygon represents a municipality in Spain.</figcaption>
 </figure>
 
-Currently, only the municipality of Crevillent contains building data.
+!!! warning "Currently, only the municipality of Crevillent contains building data."
+
+When focused on a municipality that contains data, the bottom of the screen displays a table with the first 10 buildings ranked by solar potential radiation. This is the default sorting criterion, but the user can change it in two ways, which will be explained in the next sections.
 
 <figure markdown="span">
   ![Selecting a municipality](../imgs/lec-tool/lec-select-municipality.png){ width="800" }
   <figcaption>Selecting a municipality. Notice that additional buttons appear, and the table at the bottom contains data.</figcaption>
 </figure>
-
-When focused on a municipality that contains data, the bottom of the screen displays a table with the first 10 buildings ranked by solar potential radiation. This is the default sorting criterion, but the user can change it in two ways, which will be explained in the next sections.
 
 The main functionalities of the tool are:
 
@@ -76,11 +76,33 @@ The following image illustrates these functionalities:
 
 ### Changing Sorting Criteria
 
-As mentioned before, the default sorting is by solar potential radiation. The user can change the order of the table by clicking on the column headers.
+As mentioned before, the default sorting is by solar potential radiation. The user can change the order of the table by clicking on the column headers. For more complex sorting, the user can click the "Sorting criteria" box to unfold the advanced sorting options.
+
+Inside this panel, the user can drag each variable to the desired position. The order of the variables determines the importance. Thus, each variable is given a weight, and the buildings will be sorted by the weighted sum of the variables.
+
+<figure markdown="span">
+  ![Sorting criteria panel](../imgs/lec-tool/lec-sort-criteria-panel.png){ width="800" }
+  <figcaption>Sorting criteria panel, located at the bottom right of the screen</figcaption>
+</figure>
+
+After the sorting criteria are defined, the user can click the button to apply the new sorting to the table below.
 
 ### Filtering Buildings
 
-TODO
+One of the key features of the tool is the filtering of buildings. From all the available buildings, the user can select a subset by using the draw mode.
+
+To change the tool’s mode, the user can click on the ![Draw button](../imgs/lec-tool/lec-draw-button.png){ width="15" } button, located on the left side of the screen.
+
+With this mode selected, the pointer changes to a blue dot, and some view functionalities will be disabled. The user can now click to add several points to form a desired polygon. When the user clicks on the first point again, or double-clicks, the polygon will close, and the tool will filter and display only the buildings inside the polygon.
+
+Consequently, the table will also display only the buildings within the polygon, ensuring consistency between both views.
+
+To exit the drawing mode, the user can click the draw button again. A button at the bottom of the map allows the user to reset the filter and show all buildings again.
+
+<figure markdown="span">
+  ![Filtering buildings by drawing a polygon](../imgs/lec-tool/lec-draw-polygon.png){ width="800" }
+  <figcaption>Filtering a block of buildings by drawing a polygon over them.</figcaption>
+</figure>
 
 ### Report Generation
 
