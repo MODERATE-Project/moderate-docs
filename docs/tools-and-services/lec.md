@@ -1,6 +1,7 @@
 ---
 title: LEC tool
 ---
+
 # Local Energy Communities Assessment Tool
 
 !!! abstract "Abstract"
@@ -93,27 +94,29 @@ One of the key features of the tool is the filtering of buildings. From all the 
 
 To change the tool’s mode, the user can click on the ![Draw button](../imgs/lec-tool/lec-draw-button.png){ width="35" } button, located on the left side of the screen.
 
-With this mode selected, the pointer changes to a blue dot, and some view functionalities will be disabled. The user can now click to add several points to form a desired polygon. When the user clicks on the first point again, or double-clicks, the polygon will close, and the tool will filter and display only the buildings inside the polygon.
+With this mode selected, the pointer changes to a blue dot, and some view functionalities will be disabled. The user can then click to add several points to form a desired polygon. When the user clicks on the first point again, or double-clicks, the polygon will close, and the tool will filter and display only the buildings inside the polygon.
 
 Consequently, the table will also display only the buildings within the polygon, ensuring consistency between both views.
-
-To exit the drawing mode, the user can click the draw button again. A button at the bottom of the map allows the user to reset the filter and show all buildings again.
 
 <figure markdown="span">
   ![Filtering buildings by drawing a polygon](../imgs/lec-tool/lec-draw-polygon.png){ width="800" }
   <figcaption>Filtering a block of buildings by drawing a polygon over them.</figcaption>
 </figure>
 
+To exit the drawing mode, the user can click the draw button again. A button at the bottom of the map allows the user to reset the filter and display all buildings again.
+
 ### Report Generation
 
-TODO
+The tool allows users to generate a report detailing the characteristics of the buildings, along with additional data and a brief analysis of the selected municipality and the filtered buildings.
 
----
+To generate the report and save it to their computer, users can click the "Generate report" button. In a few seconds, the report will be generated and downloaded locally.
 
-!!! info "Known limitations and issues"
+!!! info "About the report generation"
 
-    Be sure to mention any known limitations of the tool or service (if applicable), as well as any issues that are known and will be addressed in the future.
+    This feature is still under development, so the generated report is not yet fully complete.
 
 ## References
 
-Useful links and additional references.
+- Access to the tool: https://lec.moderate.cloud
+
+- Spanish cadastre website: https://www.sedecatastro.gob.es/
