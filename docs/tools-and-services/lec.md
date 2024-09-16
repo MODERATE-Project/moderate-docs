@@ -91,7 +91,7 @@ After the sorting criteria are defined, the user can click the button to apply t
 
 One of the key features of the tool is the filtering of buildings. From all the available buildings, the user can select a subset by using the draw mode.
 
-To change the tool’s mode, the user can click on the ![Draw button](../imgs/lec-tool/lec-draw-button.png){ width="15" } button, located on the left side of the screen.
+To change the tool’s mode, the user can click on the ![Draw button](../imgs/lec-tool/lec-draw-button.png){ width="35" } button, located on the left side of the screen.
 
 With this mode selected, the pointer changes to a blue dot, and some view functionalities will be disabled. The user can now click to add several points to form a desired polygon. When the user clicks on the first point again, or double-clicks, the polygon will close, and the tool will filter and display only the buildings inside the polygon.
 
