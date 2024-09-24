@@ -6,23 +6,29 @@ title: CMP Anomaly Detection Tool
 
 !!! abstract "Abstract"
 
-    The tool allows to spot energy anomalies the most interesting feature is the possibility to perform add from single timeseries
+    The "CMP Anomaly Detection Tool" is designed to identify anomalies in energy consumption at the meter level, leveraging both supervised and unsupervised analytics techniques along with the distance-based contextual matrix profile (CMP) algorithm. This tool autonomously detects infrequent subsequences in energy consumption timeseries, taking into account specific boundary conditions, and ranks anomalies based on a severity score that reflects the shape and magnitude of electrical load patterns. With self-tuning capabilities, it enables energy and facility managers to quickly recognize abnormal and non-optimal energy performance patterns, thereby supporting better decision-making to reduce inefficiencies and energy waste. 
 
 ## Introduction
 
-The widespread smarte metering enabled pervaseive presence of monitoring data
+Recently, the spread of IoT technologies has led to an unprecedented acquisition of energy-related data providing
+accessible knowledge of the actual performance of buildings during their operation. A proper analysis of such data
+supports energy and facility managers in spotting valuable energy saving opportunities. In this context, anomaly
+detection and diagnosis (ADD) tools allow a prompt and automatic recognition of abnormal and non-optimal energy
+performance patterns enabling a better decision-making to reduce energy wastes and system inefficiencies.
 
-Anomaly detection in energy consumption is important because and great opportunity
+In this context, the "CMP Anomaly Detection Tool" was developed to identify energy consumption anomalies at meter-level.
+The process leverages supervised and unsupervised
+analytics techniques coupled with the distance-based contextual matrix profile (CMP) algorithm to discover infrequent
+subsequences in energy consumption timeseries considering specific boundary conditions. The proposed process has
+self-tuning capabilities and can rank anomalies according to severity score calculated with reference to shape and
+magnitude of electrical load subsequences.
 
-Using unsupervised ml is useful because
-
-that is why this tool was born
-
-it solves the problem of meter level add
-
-helps facility mangers to spot unexpected behaviour for further investigation
+The tool has been employed in a real-world scenario to detect anomalies in the energy consumption of a university
+campus, and it is a valuable tool for energy and facility managers to spot unexpected behaviour, producing an
+interactive report as output.
 
 ## User Guide
+
 TODO ask what will be the UI
 
 This section explains how the tool or service is used from an end-user perspective. What should the user take into
