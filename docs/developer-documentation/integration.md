@@ -45,7 +45,7 @@ This Dockerfile should be contained in the repository of the application or serv
 
 Create an [Action](https://github.com/features/actions) in the repository for the images to be built on each push to the `main` branch and then uploaded to MODERATE's image registry. Actions need to be located in a YAML file in the `.github/workflows` directory of the repository.
 
-For example, the following is [the _Action workflow_ configuration file for the MODERATE HTTP API](https://github.com/MODERATE-Project/moderate-platform-api/blob/main/.github/workflows/build-push-gar.yml). Please note the following details:
+For example, the following is [the _Action workflow_ configuration file for the MODERATE HTTP API](https://github.com/MODERATE-Project/moderate-platform-api/blob/main/.github/workflows/build-push-api.yml). Please note the following details:
 
 * The workflow configuration file for your own application should be mostly the same. **The only parameter that should change** is the `image_name`, which is the name of the image in the image registry. This name needs to be unique across the entire MODERATE platform.
 * We simply reuse [an existing configuration file](https://github.com/MODERATE-Project/moderate-docs/blob/main/.github/workflows/reusable-build-push-gar.yml) that is already present in the `moderate-docs` repository.
