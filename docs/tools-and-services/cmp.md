@@ -41,6 +41,20 @@ types, and any other relevant details.
   <figcaption>Including images is always a good idea</figcaption>
 </figure>
 
+### Data format and input requirements
+
+
+### Interpreting the results
+The output is a report that includes a list of detected anomalies, ranked by severity score. The report provides detailed
+
+the structure is 
+
+* summary
+* cluster
+* time window definition
+* and then deep results grouped by context and groups
+
+
 !!! info "Known limitations and issues"
 
     Be sure to mention any known limitations of the tool or service (if applicable), as well as any issues that are known and will be addressed in the future.
