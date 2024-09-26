@@ -25,6 +25,10 @@ on:
         required: false
         type: string
         default: ""
+      file:
+        required: false
+        type: string
+        default: Dockerfile
     secrets:
       # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
       wif_provider:
@@ -74,3 +78,4 @@ jobs:
             ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:${{ github.sha }}
             ${{ inputs.gar_location }}-docker.pkg.dev/${{ inputs.project_id }}/${{ inputs.gar_repo }}/${{ inputs.image_name }}:latest
           build-args: ${{ inputs.build_args }}
+          file: ${{ inputs.file }}
