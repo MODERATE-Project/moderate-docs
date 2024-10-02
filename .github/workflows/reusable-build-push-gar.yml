@@ -28,7 +28,7 @@ on:
       file:
         required: false
         type: string
-        default: "{context}/Dockerfile"
+        default: Dockerfile
     secrets:
       # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
       wif_provider:
