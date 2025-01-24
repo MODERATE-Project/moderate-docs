@@ -1,8 +1,8 @@
 ---
-title: Contextual anomaly detector tool
+title: Contextual anomaly detector
 ---
 
-# Contextual anomaly detector tool
+# Contextual Anomaly Detector Tool
 
 !!! abstract "Abstract"
 
