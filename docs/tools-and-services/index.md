@@ -18,3 +18,10 @@ The _Contextual Anomaly Detector Tool_ identifies anomalies in meter-level energ
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/contextual-anomaly-detector)
 - :fontawesome-solid-book: &nbsp; [Documentation](cmp.md)
+
+## Solar cadastre assessment tool
+
+The _Solar Cadastre (SC) Assessment Tool_ enables users to evaluate the solar energy potential of buildings and assess the efficiency of installed solar panels. Through an interactive map, users can select buildings, perform energy calculations, and retrieve cadastral data to support decision-making.
+
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/solar-cadastre)
+- :fontawesome-solid-book: &nbsp; [Documentation](solar-cadastre.md)
