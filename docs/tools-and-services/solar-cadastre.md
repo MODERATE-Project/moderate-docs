@@ -1,5 +1,5 @@
 ---
-title: Solar Cadastre Assessment Tool
+title: Solar Cadastre
 ---
 
 # Solar Cadastre Assessment Tool
