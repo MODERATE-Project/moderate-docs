@@ -156,7 +156,7 @@ After submission, the tool displays the selected reason.
 Users can enable map layers by clicking the first menu option and selecting a layer, such as cadastral buildings or land registry data.
 
 <figure markdown="span">
-  ![Cadastral layer](../imgs/sc-tool/sc-result-calculation-2-type-no-2.PNG){ width="800" }
+  ![Cadastral layer](../imgs/sc-tool/building_cadastral_layer.PNG){ width="800" }
   <figcaption>Building cadastre layer.</figcaption>
 </figure>
 
