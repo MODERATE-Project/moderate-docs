@@ -4,6 +4,10 @@ title: Introduction
 
 # Tools and services
 
+!!! info "Availability of public tools and services"
+
+    MODERATE is under active development, so the infrastructure may occasionally be offline for maintenance, cost optimization, or other development purposes. If any links are not working, please either wait for redeployment or contact us via email for access.
+
 ## 🏘️ LEC Assessment Tool
 
 Local Energy Communities (LECs) are pivotal in advancing building decarbonization,fostering social cohesion, and promoting the integration of renewable energy sources. This tool streamlines the establishment of LECs by pinpointing optimal locations for their formation, enabling stakeholders to efficiently identify viable LEC sites.

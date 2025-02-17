@@ -2,11 +2,11 @@
 title: Solar Cadastre
 ---
 
-# Solar Cadastre Assessment Tool
+# Solar Cadastre
 
 !!! abstract "Abstract"
 
-    The Solar Cadastre (SC) Assessment Tool is designed to help users calculate the energy potential of their buildings or assess the performance of their solar panels.
+    The Solar Cadastre (SC) is designed to help users calculate the energy potential of their buildings or assess the performance of their solar panels.
 
     The tool utilizes different profiles to analyze building data, calculate solar potential, and retrieve geospatial information. Users can interact with the map by selecting their building and performing the two available calculations.
 
@@ -17,8 +17,6 @@ A Solar Cadastre (SC) is a legal framework where various stakeholders collaborat
 The tool is designed to analyze building data within a city, calculating solar potential using a geospatial system. It provides users with key indicators in percentage format to assess their building’s solar potential.
 
 Additionally, users can perform a second calculation to evaluate the performance of their solar panels, determining whether they are operating efficiently.
-
-The tool is currently accessible at: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
 
 ## User Guide
 
@@ -162,5 +160,4 @@ Users can enable map layers by clicking the first menu option and selecting a la
 
 ## References
 
-- Access the tool: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
 - Spanish cadastre website: [https://www.sedecatastro.gob.es](https://www.sedecatastro.gob.es)
