@@ -8,8 +8,9 @@ title: Introduction
 
     MODERATE is under active development, so the infrastructure may occasionally be offline for maintenance, cost optimization, or other development purposes. If any links are not working, please either wait for redeployment or contact us via email for access.
 
-## 🏘️ Benchmarking
-Benchmarkign is a web tool that allows the comparison of building performances. It provides a comprehensive view of energy efficiency and performance metrics for a selected building, including the most relevant KPIs and their interdependencies.
+## 📊 Building Benchmarking
+
+Benchmarking is a web tool that allows the comparison of building performances. It provides a comprehensive view of energy efficiency and performance metrics for a selected building, including the most relevant KPIs and their interdependencies.
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/MODERATE_building_benchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking.md)

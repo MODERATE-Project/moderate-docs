@@ -2,7 +2,7 @@
 title: Benchmarking Tool 
 ---
 
-# Contextual Anomaly Detector Tool
+# Benchmarking Tool
 
 !!! abstract "Abstract"
 
@@ -12,8 +12,10 @@ title: Benchmarking Tool
 ## Introduction
 
 In an era where energy efficiency and sustainability are key priorities, understanding how a building performs compared to industry benchmarks is essential. The Building Benchmarking Tool is a web-based platform that enables users to analyze and compare the energy performance of buildings.
-By leveraging a comprehensive database of reference buildings, the tool provides insights into energy consumption, indoor comfort, and efficiency levels, helping professionals make data-driven decisions. Through interactive visualizations and customizable inputs, users can assess their building’s energy footprint, identify potential inefficiencies, and explore strategies for optimization. Additionally, the tool considers climate zone variations, ensuring that benchmarks are accurate and region-specific.
-Whether you are an energy manager,  energy consultant, or building owner, this tool serves as a valuable resource for improving sustainability and reducing operational costs
+
+By leveraging a comprehensive database of reference buildings, the tool provides insights into energy consumption, indoor comfort, and efficiency levels, helping professionals make data-driven decisions. Through interactive visualizations and customizable inputs, users can assess their building's energy footprint, identify potential inefficiencies, and explore strategies for optimization. Additionally, the tool considers climate zone variations, ensuring that benchmarks are accurate and region-specific.
+
+Whether you are an energy manager, energy consultant, or building owner, this tool serves as a valuable resource for improving sustainability and reducing operational costs.
 A new section has been integrated into the tool that includes the evaluation of possible sensor malfunctions or anomalies. This part represents a preliminary assessment of the integration of moderate applications such as fault detection.
 
 <figure markdown="span">
@@ -22,8 +24,11 @@ A new section has been integrated into the tool that includes the evaluation of 
 </figure>
 
 ## User Guide
+
 The tool is composed of five main sections, accessible through the navbar in the header. These sections include four main categories:
+
 ### Building
+
 Users can view all managed buildings, including the latest sensor readings and the ability to view comfort performances and anomalies for a selected building.
 
 <figure markdown="span">
@@ -32,9 +37,11 @@ Users can view all managed buildings, including the latest sensor readings and t
 </figure>
 
 ### Processing
+
 In this section, users can connect processed and cleaned time-series data for a specific building sensor from a CSV format to the database where the measured data is stored. Moreover, using the Python library Brickllm, users can update building metadata. These metadata are saved in RDF format and generated following the brickschema ontology. The Brickllm library allows the regeneration of the building description file, updating, for example, the identifier value for the new connected sensor. For its use, an API key for a specific LLM provider (ChatGPT, Fireworks, or Anthropic) is required.
 
 ### Benchmarking
+
 In this section, users can visualize the performances of all buildings through specific KPIs. Additionally, users can compare these buildings with each other or select two for comparison.
 
 <figure markdown="span">
@@ -43,7 +50,9 @@ In this section, users can visualize the performances of all buildings through s
 </figure>
 
 ### Analysis
+
 This section allows data analysis according to three main subsections:
+
 - **Comfort**: Users can view internal temperature trends, assess periods of overheating and overcooling, and evaluate a regression model between internal and external temperatures. This assessment helps identify potential issues related to the building's system or envelope.
 
 <figure markdown="span">
@@ -71,6 +80,7 @@ This section allows data analysis according to three main subsections:
 </figure>
 
 ## References
-- [Benchamrking tool](https://tools.eeb.eurac.edu/building_benchmarking/#)
+
+- [Benchmarking tool](https://tools.eeb.eurac.edu/building_benchmarking/#)
 
 
