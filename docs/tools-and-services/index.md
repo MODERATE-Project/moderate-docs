@@ -46,3 +46,4 @@ The _Solar Cadastre (SC)_ enables users to evaluate the solar energy potential o
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/solar-cadastre)
 - :fontawesome-solid-book: &nbsp; [Documentation](solar-cadastre.md)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://solar.staging.moderate.cloud/)
