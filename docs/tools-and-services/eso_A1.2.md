@@ -19,7 +19,7 @@ This tool enables the user to control the heating requirement in dependency of a
 
 The tool is divided into several parts. An IO service must be created in the SYNAVISON platform:
 
-![Image title](../imgs/IO-Service.png)
+![Image title](../imgs/eso-io-service.png)
 
 This enables the import of current weather data for a selected location. From this, the outside air temperature is used as input for the “Heat Control” skill in the synavision platform. As a result, this skill outputs a time series that corresponds to the suggested room setpoint temperature.
 
