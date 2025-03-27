@@ -37,6 +37,7 @@ The following Output data is provided by the skill and available to MODERATE API
 
   -  Numerical timeseries virtual room temperature setpoint
 
+![Image title](../imgs/eso-skill-io.png)
 
 ### User experience
 
