@@ -33,7 +33,8 @@ The skill asks for the following input and parameters:
 The following Output data is provided by the skill and available to MODERATE APIs:
 
   -  Numerical timeseries virtual room temperature setpoint
-  
+
+![Image title](../imgs/eso-skill.png){ width="800" }
   
 TODO: Add images
 
