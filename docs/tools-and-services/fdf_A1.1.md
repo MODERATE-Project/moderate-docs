@@ -26,7 +26,7 @@ The tool, a so called skill within SYNAVISION platform, can connect with the MOD
 A skill is defined as an application within the context of SYNAVISION platform, and in particular within SYNAVISION’s test bench client-side software for digital twinning. It can import times series data and metadata, handle the data logically and arithmetically and export results. The skill is executed whenever new data is imported into corresponding workspace of the platform. 
 
 <figure markdown="span">
-  ![Image title](../imgs/fdf-skill-concept.png){ width="800" }
+  ![Image title](../imgs/fdf-skill-concept.png)
   <figcaption>Skill-concept for analytics services of time series data.</figcaption>
 </figure>
 
