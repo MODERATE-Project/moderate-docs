@@ -43,16 +43,13 @@ The following Output data is provided by the skill and available to MODERATE API
 
 In principle the skill is an application without an UI, that runs on SYNAVISION client-server application. In this case, the Digital Test Bench provides the UI functionalities, connects to SYNAVISION platform and to MODERATE APIs. The client, as shown in the screenshot, offers the easy application of the skill following these steps:
 
-
    - Enter a workspace.
-   - Create an instance of the skill by double clicking, naming and saving the instance.
-   - Choose the times series you want to analyse by drag and drop.
-   - Enter the length of testing and training period (number of time steps)
-   - Choose the algorithm to be applied.
+   - Create an instance of an open weather import plugin to get the forcasted ambient air temperature
+   - Create an instance of the skill "Heat Control" by double clicking, naming and saving the instance.
+   - Choose the ambient air temperature times series you want to use for control by drag and drop.
    - Save the skill.
-
-
+   - Create an instance of an proprietary My Gekko Control IO service to pulbish the setpoint commands in MyGekko JSON format to the respective topics via an export job. (Work in progress. The IO-Service will be developed by synavision soon)
 
 ### Application on MODERATE
 
-TODO
+Within MODERATE, this service can be used to reduce the heat requirement by calculating a virtual room setpoint temperature depending on the predicted outside air temperature. This virtual room setpoint temperature is sent to the building automation system via MQTT so that the setpoint temperature of the room is lowered there.
