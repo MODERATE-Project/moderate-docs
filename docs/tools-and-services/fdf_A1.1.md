@@ -18,10 +18,7 @@ The tool relies on core functionalities and services available from the SYNAVISI
 
 The tool, a so called skill within SYNAVISION platform, can connect with the MODERATE platform APIs, supporting interoperability with other tools and functionalities. It supports additional data I/O, as specific near real-time data handling. While import handles time series and metadata, exports can include various formats such as dashboards, files etc. for reporting KPIs to the users.
 
-<figure markdown="span">
-  ![Image title](../imgs/fdf-tool/platform_syna_moderate.png){ width="800" }
-  <figcaption>Interconnection between MODERATE platform and SYNAVISION platform.</figcaption>
-</figure>
+![Image title](../imgs/fdf-platform_syna_moderate.png)
 
 A skill is defined as an application within the context of SYNAVISION platform, and in particular within SYNAVISION’s test bench client-side software for digital twinning. It can import times series data and metadata, handle the data logically and arithmetically and export results. The skill is executed whenever new data is imported into corresponding workspace of the platform. 
 
@@ -50,10 +47,7 @@ The skill asks for the following input and parameters:
 
 The algorithmic options provided here have been identified as useful and robust options for generic anomaly detection and shall be applied depending on the type and characteristics of the time series data. The selection of the algorithm needs to be done by an expert depending on individual types of data.
 
-<figure markdown="span">
-  ![Image title](../imgs/fdf-tool/setup-menu-skill.png){ width="800" }
-  <figcaption>Setup menu for the configuration of the skill within the SYNAVISION platform.</figcaption>
-</figure>
+![Image title](../imgs/fdf-setup-menu-skill.png)
 
 #### Forecasting Timeseries Skill
 
@@ -85,10 +79,7 @@ In principle the skill is an application without an UI, that runs on SYNAVISION 
 #### Anomaly Detection Skill
 The client, as shown in the screenshot, offers the easy application of the skill following these steps:
 
-<figure markdown="span">
-  ![Image title](../imgs/fdf-tool/config-menu-skill.png){ width="800" }
-  <figcaption>Configuration menu of the anomaly detection skill.</figcaption>
-</figure>
+![Image title](../imgs/fdf-anomaly-config-menu-skill.png)
 
 Steps:
 -	Enter a workspace.
@@ -100,19 +91,13 @@ Steps:
 
 The following screenshot shows a time series (below) and the anomalies detected through a principal component analysis.
 
-<figure markdown="span">
-  ![Image title](../imgs/fdf-tool/visualizatioin-skill.png){ width="800" }
-  <figcaption>Visualization of the skill output (example, anomalies marked gradually in lower plot and in red in top plot).</figcaption>
-</figure>
+![Image title](../imgs/fdf-anomaly-visualization-skill.png)
 
 #### Forecasting Timeseries Skill
 
 The client, as shown in the screenshot, offers the easy application of the skill following these steps:
 
-<figure markdown="span">
-  ![Image title](../imgs/fc-tool/config-menu-skill.png){ width="800" }
-  <figcaption>Configuration menu of the forcasting skill.</figcaption>
-</figure>
+![Image title](../imgs/fdf-forecasting-config-menu-skill.png)
 
 Steps:
 -	Enter a workspace.
@@ -124,10 +109,8 @@ Steps:
 
 The following screenshot shows the time series (blue) and the predicted times series for the next day (green).
 
-<figure markdown="span">
-  ![Image title](../imgs/fc-tool/visual-initial-and-prediction-ts.png){ width="800" }
-  <figcaption>Visualization (example) of an initial time series (blue) and the prediction for the following day (green).</figcaption>
-</figure>
+![Image title](../imgs/fdf-forcasting-visualization-skill.png)
+
 
 ### Application on MODERATE
 
