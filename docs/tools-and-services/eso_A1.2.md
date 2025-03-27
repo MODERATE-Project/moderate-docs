@@ -17,12 +17,13 @@ This tool enables the user to control the heating requirement in dependency of a
 
 ## User Guide
 
-The tool is divided into several parts. An IO service must be created in the SYNAVISON platform. This enables the import of current weather data for a selected location. From this, the outside air temperature is used as input for the “Heat Control” skill in the synavision platform. As a result, this skill outputs a time series that corresponds to the suggested room setpoint temperature.
+The tool is divided into several parts. An IO service must be created in the SYNAVISON platform:
+
+![Image title](../imgs/IO-Service.png)
+
+This enables the import of current weather data for a selected location. From this, the outside air temperature is used as input for the “Heat Control” skill in the synavision platform. As a result, this skill outputs a time series that corresponds to the suggested room setpoint temperature.
 
 This virtual setpoint calculated by the skill is published via MQTT in proprietary MyGekko format by the SYNAVISION platform and picked up by MyGekko influencing the room control.
-
-TODO: Add images
-
 
 ### Input / Output
 
@@ -35,8 +36,6 @@ The following Output data is provided by the skill and available to MODERATE API
   -  Numerical timeseries virtual room temperature setpoint
 
 ![Image title](../imgs/eso-skill.png)
-  
-TODO: Add images
 
 ### User experience
 
