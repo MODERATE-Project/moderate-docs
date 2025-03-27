@@ -109,7 +109,7 @@ Steps:
 
 The following screenshot shows the time series (blue) and the predicted times series for the next day (green).
 
-![Image title](../imgs/fdf-forcasting-visualization-skill.png)
+![Image title](../imgs/fdf-forecasting-visualization-skill.png)
 
 
 ### Application on MODERATE
