@@ -1,12 +1,12 @@
 ---
-title: Energy system optimization
+title: Energy System Optimization
 ---
 
-# Energy system optimization
+# Energy System Optimization
 
 !!! abstract "Abstract"
 
-  This tool is a software application that, exploiting synergies within MODERATE and SYNAVISION platform, offers a customizable environment for setting up time series data analytics for energy system optimization.
+    This tool is a software application that, exploiting synergies within MODERATE and SYNAVISION platform, offers a customizable environment for setting up time series data analytics for energy system optimization.
 
 ## Introduction
 
@@ -15,7 +15,6 @@ New building frontiers are taking hold. Increasingly complex systems require gre
 This tool enables the user to control the heating requirement in dependency of a weather forecast. This enables targeted control of the room air temperature so that the user does not have to worry about it. If the weather forecast indicates that a certain temperature limit will be exceeded over the next few days, the room temperature setpoint is lowered as a precaution, thus minimizing the heating requirement.
 
 The tool is an optimization skill that works especially in combination with a MyGekko building automation system.
-
 
 ## User Guide
 
@@ -33,11 +32,11 @@ This virtual setpoint calculated by the skill is published via MQTT in proprieta
 
 The skill asks for the following input and parameters:
 
-  - Numerical timeseries ambient air temperature
-  
+- Numerical timeseries ambient air temperature
+
 The following Output data is provided by the skill and available to MODERATE APIs:
 
-  -  Numerical timeseries virtual room temperature setpoint
+- Numerical timeseries virtual room temperature setpoint
 
 ![Image title](../imgs/eso-skill-io.png)
 
@@ -45,16 +44,17 @@ The following Output data is provided by the skill and available to MODERATE API
 
 In principle the skill is an application without an UI, that runs on SYNAVISION client-server application. In this case, the Digital Test Bench provides the UI functionalities, connects to SYNAVISION platform and to MODERATE APIs. The client, as shown in the screenshot, offers the easy application of the skill following these steps:
 
-   - Enter a workspace.
-   - Create an instance of an open weather import plugin to get the forcasted ambient air temperature
-   - Create an instance of the skill "Heat Control" by double clicking, naming and saving the instance.
-   - Choose the ambient air temperature times series you want to use for control by drag and drop.
-   - Save the skill.
-   - Create an instance of an proprietary My Gekko Control IO service to pulbish the setpoint commands in MyGekko JSON format to the respective topics via an export job. (Work in progress. The IO-Service will be developed by synavision soon)
+- Enter a workspace.
+- Create an instance of an open weather import plugin to get the forcasted ambient air temperature
+- Create an instance of the skill "Heat Control" by double clicking, naming and saving the instance.
+- Choose the ambient air temperature times series you want to use for control by drag and drop.
+- Save the skill.
+- Create an instance of an proprietary My Gekko Control IO service to pulbish the setpoint commands in MyGekko JSON format to the respective topics via an export job. (Work in progress. The IO-Service will be developed by synavision soon)
 
 ### Application on MODERATE
 
 Within MODERATE, this service can be used to reduce the heat requirement by calculating a virtual room setpoint temperature depending on the predicted outside air temperature. This virtual room setpoint temperature is sent to the building automation system via MQTT so that the setpoint temperature of the room is lowered there.
 
 ## References
-- https://www.my-gekko.com/de/automatisierungstechnik/1-0.html
+
+- [https://www.my-gekko.com/de/automatisierungstechnik/1-0.html](https://www.my-gekko.com/de/automatisierungstechnik/1-0.html)
