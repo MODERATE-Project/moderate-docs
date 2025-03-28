@@ -14,6 +14,8 @@ New building frontiers are taking hold. Increasingly complex systems require gre
 
 This tool enables the user to control the heating requirement in dependency of a weather forecast. This enables targeted control of the room air temperature so that the user does not have to worry about it. If the weather forecast indicates that a certain temperature limit will be exceeded over the next few days, the room temperature setpoint is lowered as a precaution, thus minimizing the heating requirement.
 
+The tool is an optimization skill that works especially in combination with a MyGekko building automation system.
+
 
 ## User Guide
 
@@ -53,3 +55,6 @@ In principle the skill is an application without an UI, that runs on SYNAVISION 
 ### Application on MODERATE
 
 Within MODERATE, this service can be used to reduce the heat requirement by calculating a virtual room setpoint temperature depending on the predicted outside air temperature. This virtual room setpoint temperature is sent to the building automation system via MQTT so that the setpoint temperature of the room is lowered there.
+
+## References
+- https://www.my-gekko.com/de/automatisierungstechnik/1-0.html
