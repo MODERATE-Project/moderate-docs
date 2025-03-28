@@ -42,8 +42,20 @@ Local Energy Communities (LECs) are pivotal in advancing building decarbonizatio
 
 ## 🌞 Solar Cadastre
 
-The _Solar Cadastre (SC)_ enables users to evaluate the solar energy potential of buildings and assess the efficiency of installed solar panels. Through an interactive map, users can select buildings, perform energy calculations, and retrieve cadastral data to support decision-making.
+The _Solar Cadastre (SC)_ enables users xto evaluate the solar energy potential of buildings and assess the efficiency of installed solar panels. Through an interactive map, users can select buildings, perform energy calculations, and retrieve cadastral data to support decision-making.
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/solar-cadastre)
 - :fontawesome-solid-book: &nbsp; [Documentation](solar-cadastre.md)
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://solar.staging.moderate.cloud/)
+
+## 🔍 Fault Detection and Forecasting
+
+The _Fault Detection and Forecasting_ tool offers a customizable environment for setting up time series data analytics to detect anomalies and forecast system behavior. Through the SYNAVISION platform, it provides intelligent monitoring that enables predictive maintenance for technical building systems, helping energy managers identify faults in near-real time and optimize operations.
+
+- :fontawesome-solid-book: &nbsp; [Documentation](fdf_A1.1.md)
+
+## ⚡ Energy System Optimization
+
+The _Energy System Optimization_ tool offers a customizable environment for optimizing building energy systems through time series data analytics. Through the SYNAVISION platform, it enables smart control of heating requirements based on weather forecasts, allowing for automated temperature adjustments that maximize comfort while minimizing energy consumption. The tool is especially effective when integrated with MyGekko building automation systems.
+
+- :fontawesome-solid-book: &nbsp; [Documentation](eso_A1.2.md)
