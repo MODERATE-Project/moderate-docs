@@ -14,7 +14,8 @@ Benchmarking is a web tool that allows the comparison of building performances. 
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/MODERATE_building_benchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking.md)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://tools.eeb.eurac.edu/building_benchmarking/)
+- :fontawesome-solid-code: &nbsp; [Public application (development environment)](https://tools.eeb.eurac.edu/building_benchmarking/)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://building.staging.moderate.cloud/building_benchmarking/)
 
 ## 🧠 BrickLLM
 
