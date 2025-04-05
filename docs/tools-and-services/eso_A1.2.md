@@ -22,7 +22,7 @@ The tool is divided into several parts. An IO service must be created in the SYN
 
 ![Image title](../imgs/eso-io-service.png)
 
-This enables the import of current weather data for a selected location. From this, the outside air temperature is used as input for the “Heat Control” skill in the synavision platform. As a result, this skill outputs a time series that corresponds to the suggested room setpoint temperature.
+This enables the import of current weather data for a selected location. From this, the outside air temperature is used as input for the "Heat Control" skill in the synavision platform. As a result, this skill outputs a time series that corresponds to the suggested room setpoint temperature.
 
 ![Image title](../imgs/eso-skill.png)
 
@@ -49,7 +49,7 @@ In principle the skill is an application without an UI, that runs on SYNAVISION 
 - Create an instance of the skill "Heat Control" by double clicking, naming and saving the instance.
 - Choose the ambient air temperature times series you want to use for control by drag and drop.
 - Save the skill.
-- Create an instance of an proprietary My Gekko Control IO service to pulbish the setpoint commands in MyGekko JSON format to the respective topics via an export job. (Work in progress. The IO-Service will be developed by synavision soon)
+- Create an instance of an proprietary My Gekko Control IO service to publish the setpoint commands in MyGekko JSON format to the respective topics via an export job. (Work in progress. The IO-Service will be developed by synavision soon)
 
 ### Application on MODERATE
 

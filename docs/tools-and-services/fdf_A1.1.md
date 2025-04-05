@@ -20,9 +20,9 @@ The tool relies on core functionalities and services available from the SYNAVISI
 
 The tool, a so called skill within SYNAVISION platform, can connect with the MODERATE platform APIs, supporting interoperability with other tools and functionalities. It supports additional data I/O, as specific near real-time data handling. While import handles time series and metadata, exports can include various formats such as dashboards, files etc. for reporting KPIs to the users.
 
-![Image title](../imgs/fdf-platform_syna_moderate.png)
+![Image title](../imgs/fdf-platform-syna-moderate.png)
 
-A skill is defined as an application within the context of SYNAVISION platform, and in particular within SYNAVISION’s test bench client-side software for digital twinning. It can import times series data and metadata, handle the data logically and arithmetically and export results. The skill is executed whenever new data is imported into corresponding workspace of the platform. 
+A skill is defined as an application within the context of SYNAVISION platform, and in particular within SYNAVISION's test bench client-side software for digital twinning. It can import times series data and metadata, handle the data logically and arithmetically and export results. The skill is executed whenever new data is imported into corresponding workspace of the platform. 
 
 ![Image title](../imgs/fdf-skill-concept.png)
 
@@ -127,7 +127,7 @@ The following screenshot shows the time series (blue) and the predicted times se
 
 #### Anomaly Detection Skill
 
-Within MODERATE, this service can be used to identify anomalies in any time series, e.g., weather data, metering data etc. Extended with an auto-correction skill for data enhancement, e.g., for deleting and replacing values, the tool can be used as a powerful “behind-the-scenes”-tool to improve data quality and performance of other services within the MODERATE platform.
+Within MODERATE, this service can be used to identify anomalies in any time series, e.g., weather data, metering data etc. Extended with an auto-correction skill for data enhancement, e.g., for deleting and replacing values, the tool can be used as a powerful "behind-the-scenes"-tool to improve data quality and performance of other services within the MODERATE platform.
 
 #### Forecasting Timeseries Skill
 

@@ -12,9 +12,9 @@ title: Solar Cadastre
 
 ## Introduction
 
-A Solar Cadastre (SC) is a legal framework where various stakeholders collaborate to meet their energy needs through shared production, transmission, and consumption.
+A Solar Cadastre (SC) is a geospatial registry that provides information about the solar energy potential of buildings and land parcels within a geographical area. It helps users assess the suitability of their properties for solar energy generation.
 
-The tool is designed to analyze building data within a city, calculating solar potential using a geospatial system. It provides users with key indicators in percentage format to assess their building’s solar potential.
+The tool is designed to analyze building data within a city, calculating solar potential using a geospatial system. It provides users with key indicators in percentage format to assess their building's solar potential.
 
 Additionally, users can perform a second calculation to evaluate the performance of their solar panels, determining whether they are operating efficiently.
 
