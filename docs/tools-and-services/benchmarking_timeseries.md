@@ -1,5 +1,5 @@
 ---
-title: Contextual anomaly detector
+title: Timeseries Energy Benchmarking
 ---
 
 # Timeseries-based Energy Benchmarking
@@ -8,7 +8,10 @@ title: Contextual anomaly detector
 
     The "Timeseries-based Energy Benchmarking" tool performs advanced benchmarking of buildings' operational energy performance using hourly electricity consumption time series. It evaluates and compares a building's electricity consumption against a reference peer group selected from a larger stock of buildings (more than 700) based on similar consumption features. The tool incorporates preprocessing, peer identification, KPI calculation, and benchmarking to deliver actionable insights for building energy managers.
 
-<figure markdown="span"> ![Timeseries Energy Benchmarking app screenshot](docs/imgs/ts-bench-tool/screenshot_app.png){ width="800" } <figcaption>Screenshot of the Timeseries Energy Benchmarking application interface.</figcaption> </figure>
+<figure markdown="span">
+  ![Timeseries Energy Benchmarking app screenshot](../imgs/ts-bench-tool/screenshot_app.png){ width="800" }
+  <figcaption>Screenshot of the Timeseries Energy Benchmarking application interface.</figcaption>
+</figure>
 
 ## Introduction
 
@@ -25,7 +28,7 @@ The benchmarking workflow consists of the following key processes:
 Raw electricity consumption data is cleaned using statistical outlier detection and decomposed with MSTL (Multiple Seasonal-Trend decomposition with Loess) to remove inconsistencies and prepare the data for analysis.
 
 #### Peer identification
-Time series features are extracted for each building, including thermal dependency, reference load conditions (weekday/weekend, seasonal groups), load shape factors, and mean consumption. These features enable selection of a peer group exhibiting similar load behaviors.
+Time series features are extracted for each building, including thermal dependency, reference load conditions (weekday/weekend, seasonal groups), load-shape factors, and mean consumption. These features enable selection of a peer group exhibiting similar load behaviors.
 
 #### Key Performance Indicators (KPIs) calculation
 The tool computes KPIs describing various energy performance aspects:
@@ -33,7 +36,7 @@ The tool computes KPIs describing various energy performance aspects:
   - Energy Use Intensity
 
   - Operational Schedule Efficiency: evaluate the consumption ratio
-    among working hours, non-working hours and weekends.
+    between working hours, non-working hours, and weekends.
 
   - Load Volatility: evaluates the variability in daily load profiles.
 
@@ -49,7 +52,10 @@ The tool computes KPIs describing various energy performance aspects:
     analysts with a clear understanding of how a building performs in each
     area and where there are opportunities for improvement.
 
-<figure markdown="span"> ![Summary of benchmarking results](docs/imgs/ts-bench-tool/summary.png){ width="800" } <figcaption>Summary visualization of benchmarking results including KPI scores.</figcaption> </figure>
+<figure markdown="span">
+  ![Summary of benchmarking results](../imgs/ts-bench-tool/summary.png){ width="800" }
+  <figcaption>Summary visualization of benchmarking results including KPI scores.</figcaption>
+</figure>
 
 ## Input data
 The tool requires the following input data:
@@ -58,23 +64,29 @@ The tool requires the following input data:
 * **Outside air temperature timeseries**: Provided as a CSV file containing hourly outside air temperature data.
 * **End-use category of the building**: A string indicating the building's primary usage (e.g., Office, Educational).
 * **Floor area of the building**: Numeric value representing the building's floor area in square meters.
-* [Optional] **State**: A string specifying the building’s state, used to retrieve the local holiday calendar for enhanced analysis (only for US buildings).
+* [Optional] **State**: A string specifying the building's state, used to retrieve the local holiday calendar for enhanced analysis (only for US buildings).
 
 If the required data is unavailable, the tool provides example buildings to explore benchmarking functionality. Users can toggle usage modes via the interface control.
 
 ## Usage
 
-The application comes with an interface that allows users to upload the required data files. The interface contains the description of the input data format and the expected columns. The user can upload the files and insert the remaining information.
+The application comes with an interface that allows users to upload the required data files. The interface contains the description of the input data format and the expected columns. The user can upload the files and enter the remaining information.
 
-<figure markdown="span"> ![Timeseries Energy Benchmarking app screenshot](docs/imgs/ts-bench-tool/upload_data.png){ width="800" } <figcaption>Screenshot of the Timeseries Energy Benchmarking application interface.</figcaption> </figure>
+<figure markdown="span">
+  ![Timeseries Energy Benchmarking app screenshot](../imgs/ts-bench-tool/upload_data.png){ width="800" }
+  <figcaption>Screenshot of the Timeseries Energy Benchmarking application interface.</figcaption>
+</figure>
 
-Once the data is uploaded, the user can start the benchmarking process by clicking the "Perform analysis" button. Then, the user can browser the results in the other tabs of the interface. Each tab contains a description of the results presented.
+Once the data is uploaded, the user can start the benchmarking process by clicking the "Perform analysis" button. Then, the user can browse the results in the other tabs of the interface. Each tab contains a description of the results presented.
 
-<figure markdown="span"> ![Timeseries Energy Benchmarking app screenshot](docs/imgs/ts-bench-tool/example.png){ width="800" } <figcaption>Peer identification tab.</figcaption> </figure>
+<figure markdown="span">
+  ![Timeseries Energy Benchmarking app screenshot](../imgs/ts-bench-tool/example.png){ width="800" }
+  <figcaption>Peer identification tab.</figcaption>
+</figure>
 
 !!! info "Known limitations and issues"
 
-    A known limitation is the static nature of the tool. Future deployment will improve the dynamic integration of new buildings in order to update the stock considered during the peer identification process. Furthemore, the interoperability of the tool will be improved through the use of ontology-based metadata models.
+    A known limitation is the static nature of the tool. Future deployment will improve the dynamic integration of new buildings in order to update the stock considered during the peer identification process. Furthermore, the interoperability of the tool will be improved through the use of ontology-based metadata models.
 
 ## References
 

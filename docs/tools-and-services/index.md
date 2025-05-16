@@ -61,8 +61,9 @@ The _Energy System Optimization_ tool offers a customizable environment for opti
 
 - :fontawesome-solid-book: &nbsp; [Documentation](eso_A1.2.md)
 
-## 📊 Timeseries-based Energy Benchmarking
+## 📉 Timeseries-based Energy Benchmarking
+
 The _Timeseries-based Energy Benchmarking_ tool performs advanced benchmarking of buildings' operational energy performance using hourly electricity consumption time series. It evaluates and compares a building's electricity consumption against a reference peer group selected from a larger stock of buildings (more than 700) based on similar consumption features. The tool incorporates preprocessing, peer identification, KPI calculation, and benchmarking to deliver actionable insights for building energy managers.
 
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/baeda-polito/TimeseriesEnergyBenchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking_timeseries.md)
-
