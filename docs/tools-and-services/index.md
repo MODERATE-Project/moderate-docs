@@ -60,3 +60,9 @@ The _Fault Detection and Forecasting_ tool offers a customizable environment for
 The _Energy System Optimization_ tool offers a customizable environment for optimizing building energy systems through time series data analytics. Through the SYNAVISION platform, it enables smart control of heating requirements based on weather forecasts, allowing for automated temperature adjustments that maximize comfort while minimizing energy consumption. The tool is especially effective when integrated with MyGekko building automation systems.
 
 - :fontawesome-solid-book: &nbsp; [Documentation](eso_A1.2.md)
+
+## 📊 Timeseries-based Energy Benchmarking
+The _Timeseries-based Energy Benchmarking_ tool performs advanced benchmarking of buildings' operational energy performance using hourly electricity consumption time series. It evaluates and compares a building's electricity consumption against a reference peer group selected from a larger stock of buildings (more than 700) based on similar consumption features. The tool incorporates preprocessing, peer identification, KPI calculation, and benchmarking to deliver actionable insights for building energy managers.
+
+- :fontawesome-solid-book: &nbsp; [Documentation](benchmarking_timeseries.md)
+
