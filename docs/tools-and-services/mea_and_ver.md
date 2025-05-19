@@ -35,10 +35,10 @@ It compares the predicted consumption (baseline) with the actual consumption aft
 ## User Guide
 
 The tool use the engine developed in the repository:
-https://github.com/MODERATE-Project/Measurement-and-verification
+[Measurement and Verification engine](https://github.com/MODERATE-Project/Measurement-and-verification
 
 the resulting report is intgerated in the benchmarking web tool: 
-https://tools.eeb.eurac.edu/building_benchmarking/ 
+[Benchmarking and M&V tool](https://tools.eeb.eurac.edu/building_benchmarking/ 
 
 in the dedicated section: Measurement and Verification
 
@@ -57,5 +57,5 @@ Example of the resulting analysis:
 </figure>
 
 an example of the entire report is available here: 
-https://tools.eeb.eurac.edu/building_benchmarking/measurement_and_verification 
+[Example Report](https://tools.eeb.eurac.edu/building_benchmarking/measurement_and_verification) 
 
