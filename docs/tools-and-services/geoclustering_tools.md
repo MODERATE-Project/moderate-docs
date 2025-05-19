@@ -64,7 +64,7 @@ Users can view the EPC dataset, filter it according to specifici physical featur
 In this section, users can visualize the synthetic dataset of the EPCs.
 
 <figure markdown="span">
-  ![Image title](../imgs/bench-tool/home.png){ width="800" }
-  <figcaption>Geoclustering</figcaption>
+  ![Image title](../imgs/geo-tool/Synthetic.png){ width="800" }
+  <figcaption>Synthetic report of EPC </figcaption>
 </figure>
 

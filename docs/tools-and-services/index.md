@@ -32,6 +32,18 @@ The _Contextual Anomaly Detector_ identifies anomalies in meter-level energy con
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/contextual-anomaly-detector)
 - :fontawesome-solid-book: &nbsp; [Documentation](cmp.md)
 
+## 🏗️ Geoclustering Tool
+
+The _Geoclustering Tool_ is a web application that allows users to cluster buildings based on their geospatial location and other relevant features. The tool is built using Python and is designed to be easy to use and understand. 
+The actual versione analyze the Energy PErformance Certificate of the Pedmont region, Italy.
+A sensitivity analysis is also available to evaluate the impact of different clustering parameters on a selected target.
+
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/geoclustering_sensitivity_analysis)
+- :fontawesome-solid-book: &nbsp; [Documentation](geoclustering_tools.md)
+- :fontawesome-solid-code: &nbsp; [Public application (development environment)](https://tools.eeb.eurac.edu/epc_clustering/piemonte/)  
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://tools.eeb.eurac.edu/epc_clustering/piemonte/)
+
+
 ## 🏘️ LEC Assessment Tool
 
 Local Energy Communities (LECs) are pivotal in advancing building decarbonization, fostering social cohesion, and promoting the integration of renewable energy sources. This tool streamlines the establishment of LECs by pinpointing optimal locations for their formation, enabling stakeholders to efficiently identify viable LEC sites.
