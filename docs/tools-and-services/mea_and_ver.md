@@ -44,7 +44,18 @@ in the dedicated section: Measurement and Verification
 
 ## Report
 
-The resulting report has the following shape:
+Example of the resulting analysis:
 
-[Example report](../imgs/me-v-tool/measurement_and_verification_report.html)
+<figure markdown="span">
+  ![Image title](../imgs/me-v-tool/report_2.png){ width="800" }
+  <figcaption>Measurement and Verification Tool graph - model 1</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![Image title](../imgs/me-v-tool/report_MEV.png){ width="800" }
+  <figcaption>Measurement and Verification Tool graph - model 2</figcaption>
+</figure>
+
+an example of the entire report is available here: 
+https://tools.eeb.eurac.edu/building_benchmarking/measurement_and_verification 
 
