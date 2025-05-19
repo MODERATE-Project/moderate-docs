@@ -52,6 +52,12 @@ Local Energy Communities (LECs) are pivotal in advancing building decarbonizatio
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://lec.staging.moderate.cloud/)
 - :fontawesome-solid-book: &nbsp; [Documentation](lec.md)
 
+## Measurement and Verification Tool
+
+The _Measurement and Verification Tool_ is a web application that allows users to perform measurement and verification of building energy performance, using the option C of the International Performance Measurement and Verification Protocol (IPMVP).
+
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/Measurement-and-verification)
+- :fontawesome-solid-book: &nbsp; [Documentation](mea_and_ver.md)
 
 ## 🌞 Solar Cadastre
 
