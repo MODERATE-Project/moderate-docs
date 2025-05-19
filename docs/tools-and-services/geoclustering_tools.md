@@ -25,7 +25,7 @@ The user can use the web app or perform a directly analysis using the dedicated 
 ## Workflow
 
 <figure markdown="span">
-  ![Image title](../imgs/geo-tool/Geoclustering_workflow.png){ width="800" }
+  ![Image title](../imgs/geo-tool/Geoclustering.png){ width="800" }
   <figcaption>Geoclustering workflow</figcaption>
 </figure>
 
