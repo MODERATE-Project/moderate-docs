@@ -40,10 +40,9 @@ Local Energy Communities (LECs) are pivotal in advancing building decarbonizatio
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://lec.staging.moderate.cloud/)
 - :fontawesome-solid-book: &nbsp; [Documentation](lec.md)
 
-
 ## 🌞 Solar Cadastre
 
-The _Solar Cadastre (SC)_ enables users xto evaluate the solar energy potential of buildings and assess the efficiency of installed solar panels. Through an interactive map, users can select buildings, perform energy calculations, and retrieve cadastral data to support decision-making.
+The _Solar Cadastre (SC)_ enables users to evaluate the solar energy potential of buildings and assess the efficiency of installed solar panels. Through an interactive map, users can select buildings, perform energy calculations, and retrieve cadastral data to support decision-making.
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/solar-cadastre)
 - :fontawesome-solid-book: &nbsp; [Documentation](solar-cadastre.md)
