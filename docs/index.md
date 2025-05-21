@@ -1,6 +1,6 @@
 # Welcome to MODERATE
 
-Welcome to the documentation of the MODEIRATE platform :wave:
+Welcome to the documentation of the MODERATE platform :wave:
 
 The MODERATE project is funded under the Horizon Europe program. Its main objective is to develop services and tools that focus on building-related data sources and datasets.
 
