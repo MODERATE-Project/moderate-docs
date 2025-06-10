@@ -86,7 +86,7 @@ The _Timeseries-based Energy Benchmarking_ tool performs advanced benchmarking o
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/baeda-polito/TimeseriesEnergyBenchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking_timeseries.md)
 
-## 📊 Quality Check Report Tool
+## ✅ Quality Check Report Tool
 
 The _Quality Check Report Tool_ is a web-based application designed to validate and analyze Energy Performance Certificates (EPC) in XML format. This tool automates the process of identifying inconsistencies and discrepancies in EPCs by applying a set of predefined validation rules. The application provides immediate feedback through a user-friendly interface, helping users ensure their certificates meet all required standards and specifications.
 
