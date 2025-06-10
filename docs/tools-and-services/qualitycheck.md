@@ -1,5 +1,5 @@
 ---
-title: Template
+title: Quality Check Report Tool
 ---
 
 # Quality Check Report Tool
