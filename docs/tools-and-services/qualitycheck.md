@@ -72,5 +72,4 @@ The user can generate a report of the validation results. To do so, the user can
 
 - [EPC Documentation](https://www.miteco.gob.es/content/dam/miteco/es/energia/files-1/Eficiencia/CertificacionEnergetica/DocumentosReconocidos/documentos-reconocidos/normativamodelosutilizacion/2-Informe_evaluacion_energetica_edificio_formato_electronicov2.1_XML.pdf) - Spanish Official EPC format documentation.
 
-- [Example EPCs](https://github.com/MODERATE-Project/quality-check-report-tool/tree/master/epcs) - Sample valid EPC files for reference. Access qualitis restricted to the MODERATE team.
-
+- [Example EPCs](https://github.com/MODERATE-Project/quality-check-report-tool/tree/master/epcs) - Sample valid EPC files for reference. Access is restricted to the MODERATE team.
