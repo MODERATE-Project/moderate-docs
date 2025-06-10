@@ -24,8 +24,6 @@ To begin using the tool, simply drag and drop your EPC XML file onto the designa
 
 Once the validation is complete, you'll be presented with a comprehensive view of the validation results. By default, the interface shows only the rules that have been violated. However, you can easily toggle to view all validation rules, including those that have passed and failed, by using the filter options available in the interface.
 
-TODO: Errors vs Suspected errors
-
 The validation results are presented in a clear, organized manner, showing:
 
 - The specific rules that were checked
@@ -34,7 +32,7 @@ The validation results are presented in a clear, organized manner, showing:
 - The location of problems within your certificate
 
 <figure markdown="span">
-  ![Validation results example](../imgs/qc-tool/qc-initial-view.png.png){ width="300" }
+  ![Validation results example](../imgs/qc-tool/qc-initial-view.png){ width="800" }
   <figcaption>First view of the app. Note the draggable section on the center of the screen</figcaption>
 </figure>
 
@@ -60,7 +58,7 @@ The user can generate a report of the validation results. The report will be gen
 The user can generate a report of the validation results. To do so, the user can click on the "Generate Report" button. The report will be generated in PDF.
 
 <figure markdown="span">
-  ![Validation results example](../imgs/qc-tool/qc-validation-results.png){ width="300" }
+  ![Validation results example](../imgs/qc-tool/qc-validation-results.png){ width="800" }
   <figcaption>Validation results example</figcaption>
 </figure>
 
