@@ -85,6 +85,7 @@ The _Timeseries-based Energy Benchmarking_ tool performs advanced benchmarking o
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/baeda-polito/TimeseriesEnergyBenchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking_timeseries.md)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://timeseries.staging.moderate.cloud/)
 
 ## ✅ Quality Check Report Tool
 
