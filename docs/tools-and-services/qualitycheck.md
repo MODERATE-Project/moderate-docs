@@ -14,7 +14,7 @@ The MODERATE Quality Check Report Tool was developed to address the need for aut
 
 The tool is particularly useful for professionals in the energy sector, including energy auditors, building managers, and regulatory bodies, who require a reliable method to ensure compliance with energy performance standards.
 
-The tool is currently accessible at the following URL: [http://moderated.five.es:55000](http://moderated.five.es:55000/)
+The tool is currently accessible at the following URL: [http://moderate.five.es:55000](http://moderate.five.es:55000/)
 
 ## User Guide
 
@@ -66,6 +66,6 @@ The user can generate a report of the validation results. To do so, click on the
 
 ## References
 
-- [Application URL](http://moderated.five.es:55000/) - Direct access to the MODERATE Quality Check Report Tool
+- [Application URL](http://moderate.five.es:55000/) - Direct access to the MODERATE Quality Check Report Tool
 - [EPC Documentation](https://www.miteco.gob.es/content/dam/miteco/es/energia/files-1/Eficiencia/CertificacionEnergetica/DocumentosReconocidos/documentos-reconocidos/normativamodelosutilizacion/2-Informe_evaluacion_energetica_edificio_formato_electronicov2.1_XML.pdf) - Spanish Official EPC format documentation
 - [Example EPCs](https://github.com/MODERATE-Project/quality-check-report-tool/tree/master/epcs) - Sample valid EPC files for reference. Access is restricted to the MODERATE team

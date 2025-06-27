@@ -93,4 +93,4 @@ The _Quality Check Report Tool_ is a web-based application designed to validate 
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/quality-check-report-tool)
 - :fontawesome-solid-book: &nbsp; [Documentation](qualitycheck.md)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](http://moderated.five.es:55000/)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](http://moderate.five.es:55000/)
