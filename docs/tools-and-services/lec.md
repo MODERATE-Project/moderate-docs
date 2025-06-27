@@ -128,6 +128,6 @@ To save or print the current view, users can click the "Print" button next to th
 
 ## References
 
-- Access to the tool: [https://lec.moderate.cloud/](https://lec.moderate.cloud/)
+- Access to the tool: [https://lec.staging.moderate.cloud/](https://lec.staging.moderate.cloud/)
 
 - Spanish cadastre website: [https://www.sedecatastro.gob.es](https://www.sedecatastro.gob.es)
