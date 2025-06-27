@@ -70,7 +70,7 @@ Additionally, if the user zooms in enough, the centroids of the buildings will a
 The following image illustrates these functionalities:
 
 <figure markdown="span">
-  ![Analysing buildings](../imgs/lec-tool/lec-analysing-buildings.png){ width="800" }
+  ![Analysing buildings](../imgs/lec-tool/lec-analysing-buildings.gif){ width="800" }
   <figcaption>Analyzing buildings and their solar potential</figcaption>
 </figure>
 
