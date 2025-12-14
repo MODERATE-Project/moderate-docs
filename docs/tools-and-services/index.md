@@ -32,6 +32,14 @@ The _Contextual Anomaly Detector_ identifies anomalies in meter-level energy con
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/contextual-anomaly-detector)
 - :fontawesome-solid-book: &nbsp; [Documentation](cmp.md)
 
+## 🏠 Encome 
+
+The _ENergy COnservation TOol - ENCOME -_ is a comprehensive assessment platform that evaluates building energy performance improvements through Energy Conservation Measures (ECMs) using advanced EN ISO 52016/52010 standards
+
+<!-- - :fontawesome-brands-github: &nbsp; [Git repository]() -->
+- :fontawesome-solid-book: &nbsp; [Documentation](ecm.md)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://tools.eeb.eurac.edu/encome/)
+
 ## 🏗️ Geoclustering Tool
 
 The _Geoclustering Tool_ is a web application that allows users to cluster buildings based on their geospatial location and other relevant features. The tool is built using Python and is designed to be easy to use and understand. 
