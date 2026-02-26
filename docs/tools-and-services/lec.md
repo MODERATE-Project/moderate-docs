@@ -116,9 +116,11 @@ The tool allows users to generate a report detailing the characteristics of the 
 
 To generate the report and save it to their computer, users can click the "Generate report" button in the top-right corner of the screen. The report will be generated and automatically downloaded within a few seconds.
 
+The report can be generated in two ways: for the entire municipality or for a subselection of buildings. Users can manage this through the controls detailed abeve. If a filter or selection is applied, the report will include only those specific buildings; otherwise, the re`prt for the complete municipality will be provided.
+
 !!! info "About the report generation"
 
-    This feature is still in its early stages, so the generated report may not be fully complete.
+    This feature generates the content of the report dynamically, so it may take some time to process and download the file. Please be patient.
 
 ### Saving or Printing the Current View
 
