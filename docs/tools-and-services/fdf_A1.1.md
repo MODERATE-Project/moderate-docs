@@ -36,7 +36,7 @@ The skill for forcasting (Forecasting Timeseries Skill) can be used to for predi
 
 ### Input / Output
 
-The skill generally require 
+The skill generally require the input of one time series, the definition of time periods for testing and traing and the selection of an algorithm. The ourput is one or more time series with results and individual KPIs for the testing period. Once set up, the skills is carried out whenever data is imported. 
 
 #### Anomaly Detection Skill
 
@@ -64,8 +64,8 @@ The skill asks for the following input:
 - Size of the time window for which the time series shall be predicted.
 - Size of the time window used as training data.
 - Selection of the concrete algorithm to be used to predict the future behaviour:
-  -- Holt Winters Additive Trend Additive Season
-  -- Holt Winters Additive Trend Multiplicative Season
+  - Holt Winters Additive Trend Additive Season
+  - Holt Winters Additive Trend Multiplicative Season
   - Neural Basis expansion analysis
   - Trigonometric seasonality, Trend and Season
   - Trigonometric seasonality, Trend Box-Cox, Trend
@@ -126,6 +126,7 @@ The following screenshot shows the time series (blue) and the predicted times se
 
 
 ### Application on MODERATE
+Import and export conncectivity with the MODERATE platform can be established with a variety of interfaces, e.g. csv-file exchange, openAPI, MQTT etc. for the exchange of time series data. The appplication is generic and can be used in a variety of tools for supervision of systems. Key advantages are the standardization and plug&play application without individual setup effort. 
 
 #### Anomaly Detection Skill
 
