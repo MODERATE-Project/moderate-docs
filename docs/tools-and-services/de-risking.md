@@ -32,13 +32,13 @@ The current workflow includes:
 
 1. Load 2D geometry from OpenStreetMap. 
     <figure markdown="span">
-    ![Image title](../imgs/de-risk-tool/load_2d_geometry_from_osm.png){ width="800" }
+    ![Image title](../imgs/de-risk-tool/load_2d_geometry_from_osm.png){ width="600" }
     <figcaption>"2D Geometry from OpenStreetMap"</figcaption>
     </figure>
  
 2. Load street-view imagery from Mapillary.
     <figure markdown="span">
-    ![Image title](../imgs/de-risk-tool/load_street_view_imagery_from_mapillary.png){ width="800" }
+    ![Image title](../imgs/de-risk-tool/load_street_view_imagery_from_mapillary.png){ width="600" }
     <figcaption>"Street-view imagery from Mapillary"</figcaption>
     </figure>
  
@@ -47,13 +47,13 @@ The current workflow includes:
  
 4. Load additional building parameters from archetypes.
     <figure markdown="span">
-    ![Image title](../imgs/de-risk-tool/load_building_parameters.png){ width="800" }
+    ![Image title](../imgs/de-risk-tool/load_building_parameters.png){ width="600" }
     <figcaption>"Load building parameters from archetypes"</figcaption>
     </figure>
  
 5. Use real consumption data to calibrate the model.
     <figure markdown="span">
-    ![Image title](../imgs/de-risk-tool/use_consumption_data_to_calibrate_model.png){ width="800" }
+    ![Image title](../imgs/de-risk-tool/use_consumption_data_to_calibrate_model.png){ width="600" }
     <figcaption>"Use real consumption data to calibrate the model"</figcaption>
     </figure>
 
