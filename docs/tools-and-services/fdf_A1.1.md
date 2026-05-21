@@ -126,7 +126,7 @@ The following screenshot shows the time series (blue) and the predicted times se
 
 
 ### Application on MODERATE
-Import and export conncectivity with the MODERATE platform can be established with a variety of interfaces, e.g. csv-file exchange, openAPI, MQTT etc. for the exchange of time series data. The appplication is generic and can be used in a variety of tools for supervision of systems. Key advantages are the standardization and plug&play application without individual setup effort. 
+Import and export conncectivity between the synavision platform and the MODERATE platform can be established with a variety of interfaces, e.g. csv-file exchange, openAPI, MQTT etc. for the exchange of time series data. The appplication is generic and can be used in a variety of tools for supervision of systems. Key advantages are the standardization and plug&play application without individual setup effort. 
 
 #### Anomaly Detection Skill
 
