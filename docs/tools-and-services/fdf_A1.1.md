@@ -36,6 +36,8 @@ The skill for forcasting (Forecasting Timeseries Skill) can be used to for predi
 
 ### Input / Output
 
+The skill generally require 
+
 #### Anomaly Detection Skill
 
 The skill asks for the following input and parameters:
@@ -62,8 +64,8 @@ The skill asks for the following input:
 - Size of the time window for which the time series shall be predicted.
 - Size of the time window used as training data.
 - Selection of the concrete algorithm to be used to predict the future behaviour:
-  - Holt Winters Additive Trend Additive Season
-  - Holt Winters Additive Trend Multiplicative Season
+  -- Holt Winters Additive Trend Additive Season
+  -- Holt Winters Additive Trend Multiplicative Season
   - Neural Basis expansion analysis
   - Trigonometric seasonality, Trend and Season
   - Trigonometric seasonality, Trend Box-Cox, Trend
