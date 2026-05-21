@@ -54,6 +54,7 @@ In principle the skill is an application without an UI, that runs on SYNAVISION 
 ### Application on MODERATE
 
 Within MODERATE, this service can be used to reduce the heat requirement by calculating a virtual room setpoint temperature depending on the predicted outside air temperature. This virtual room setpoint temperature is sent to the building automation system via MQTT so that the setpoint temperature of the room is lowered there.
+The service has been implemented in a demostrator within MODERATE. It can be applied on the same technical setup in buildings "by a klick". For other setups, the skill need to be adapted indivudally.  
 
 ## References
 
