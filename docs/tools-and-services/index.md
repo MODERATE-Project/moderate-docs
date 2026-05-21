@@ -102,3 +102,11 @@ The _Quality Check Report Tool_ is a web-based application designed to validate 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/quality-check-report-tool)
 - :fontawesome-solid-book: &nbsp; [Documentation](qualitycheck.md)
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](http://moderate.five.es:55000/)
+
+## ✅ De-Risking Tool
+
+The _De-risking Tool_ is a web-based application for a user to input their building address, automatically capture geometric data, run calibrated building energy simulations in the baseline and retrofit conditions, and evaluate savings in energy and CO2 emissions, retrofit costs, and financial metrics associated with the investment scenarios.
+
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/de-risking-tool)
+- :fontawesome-solid-book: &nbsp; [Documentation](de-risking.md)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Public application]()
