@@ -130,11 +130,13 @@ Import and export conncectivity between the synavision platform and the MODERATE
 
 #### Anomaly Detection Skill
 
-Within MODERATE, this service can be used to identify anomalies in any time series, e.g., weather data, metering data etc. Extended with an auto-correction skill for data enhancement, e.g., for deleting and replacing values, the tool can be used as a powerful "behind-the-scenes"-tool to improve data quality and performance of other services within the MODERATE platform.
+Within MODERATE, this service can be used to identify anomalies in any time series, e.g., weather data, metering data etc. Extended with an auto-correction skill for data enhancement, e.g., for deleting and replacing values, the tool can be used as a powerful "behind-the-scenes"-tool to improve data quality and performance of other services within the MODERATE platform. 
+The skill is fully implemented and applicable within the synavision platform. 
 
 #### Forecasting Timeseries Skill
 
 Time series prediction can be used to model the future behaviour of a system, e.g., the energy consumption of a building. Knowing the future energy consumption can help to manage energy demand by optimizing the management of storage capacities, e.g., through load shifting or peak shaving. By knowing when a load peak is likely, when energy prices are high (or low) or demand is going to be low (or high), the building management system can decide to increase or reduce the amount of stored energy in buffer tanks or construction and thus avoid reaching peaks or buying energy at high cost. 
+The skill is fully implemented and applicable within the synavision platform.
 
 ## References
 
