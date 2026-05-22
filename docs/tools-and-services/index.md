@@ -51,7 +51,6 @@ A sensitivity analysis is also available to evaluate the impact of different clu
 - :fontawesome-solid-code: &nbsp; [Public application (development environment)](https://tools.eeb.eurac.edu/epc_clustering/piemonte/)  
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://tools.eeb.eurac.edu/epc_clustering/piemonte/)
 
-
 ## 🏘️ LEC Assessment Tool
 
 Local Energy Communities (LECs) are pivotal in advancing building decarbonization, fostering social cohesion, and promoting the integration of renewable energy sources. This tool streamlines the establishment of LECs by pinpointing optimal locations for their formation, enabling stakeholders to efficiently identify viable LEC sites.
@@ -59,6 +58,16 @@ Local Energy Communities (LECs) are pivotal in advancing building decarbonizatio
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/lec-location-assessment-tool)
 - :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://lec.staging.moderate.cloud/)
 - :fontawesome-solid-book: &nbsp; [Documentation](lec.md)
+
+## 🗺️ DBSM R2025 GeoService
+
+The _DBSM GeoService_ is a containerized geospatial microservice stack for managing, publishing, and querying the **Database of Structures and Buildings Mapping (DBSM)** — a pan-European building footprint dataset covering 28 countries in two versions: R2023 (v1) and R2025 (v2). The stack exposes a REST API via PostgREST, an interactive map service via GeoServer, and a Swagger UI for exploring all available endpoints. A QGIS project is included, to.
+
+- :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/DBSM_R2025_GeoService)
+- :fontawesome-solid-book: &nbsp; [Documentation](dbsm.md)
+- :fontawesome-solid-up-right-from-square: &nbsp; [REST API](http://newdevit.fundacionctic.org:3501)
+- :fontawesome-solid-up-right-from-square: &nbsp; [Swagger UI](http://newdevit.fundacionctic.org:3504)
+- :fontawesome-solid-up-right-from-square: &nbsp; [GeoServer](http://newdevit.fundacionctic.org:3503/geoserver/web)
 
 ## 💰 Measurement and Verification Tool
 
