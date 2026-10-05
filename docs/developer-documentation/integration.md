@@ -43,33 +43,78 @@ This Dockerfile should be contained in the repository of the application or serv
 
 **Who**: _Developer_ or _Administrator_
 
-Create an [Action](https://github.com/features/actions) in the repository for the images to be built on each push to the `main` branch and then uploaded to MODERATE's image registry. Actions need to be located in a YAML file in the `.github/workflows` directory of the repository.
+Create an [Action](https://github.com/features/actions) in the repository that builds the image on each push to the `main` branch and publishes it as a public package on the [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry), under `ghcr.io/moderate-project/`. Actions need to be located in a YAML file in the `.github/workflows` directory of the repository.
 
-For example, the following is [the _Action workflow_ configuration file for the MODERATE HTTP API](https://github.com/MODERATE-Project/moderate-platform-api/blob/main/.github/workflows/build-push-api.yml). Please note the following details:
+For example, the following is [the _Action workflow_ configuration file for this documentation website](https://github.com/MODERATE-Project/moderate-docs/blob/main/.github/workflows/docker-publish.yml). Please note the following details:
 
-* The workflow configuration file for your own application should be mostly the same. **The only parameter that should change** is the `image_name`, which is the name of the image in the image registry. This name needs to be unique across the entire MODERATE platform.
-* We simply reuse [an existing configuration file](https://github.com/MODERATE-Project/moderate-docs/blob/main/.github/workflows/reusable-build-push-gar.yml) that is already present in the `moderate-docs` repository.
-* All the variables and secrets (e.g. `secrets.WIF_PROVIDER`) have already been configured at the organization level by the administrator. Note that the administrator needs to manually enable the secrets for a particular repository before they are available.
+* The workflow configuration file for your own application should be mostly the same. **The only parameter that should change** is the image name at the end of `images` (`moderate-docs` in the example). This name needs to be unique across the entire MODERATE platform. If your Dockerfile lives in a subdirectory, also set `context` in the build step to that directory, and `file` if it is not named `Dockerfile`.
+* You don't need to configure any secrets or variables. The workflow logs into the registry with the `GITHUB_TOKEN` that GitHub Actions creates for every run.
+* Pushes to `main` publish the `main`, `latest` and `sha-<short-sha>` tags. A version tag such as `v1.2.3` publishes `1.2.3` and `sha-<short-sha>`. Pull requests to `main` build the image to check the Dockerfile but don't publish it.
+* After the workflow publishes your first image, ask the administrator to make sure the package is public, so anyone can pull it without credentials.
 
-```yaml title="Example of a workflow file to build and push an image to MODERATE's image registry"
-name: Build and push an image to Google Artifact Registry (GAR)
+```yaml title="Example of a workflow file to build and push an image to the GitHub Container Registry"
+name: Build and push the Docker image to GitHub Container Registry (GHCR)
 
 on:
   push:
     branches:
       - main
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
 
 jobs:
-  call-build-push-artifact-registry:
-    uses: MODERATE-Project/moderate-docs/.github/workflows/reusable-build-push-gar.yml@main
-    with:
-      project_id: ${{ vars.DEFAULT_GAR_PROJECT_ID }}
-      gar_location: ${{ vars.DEFAULT_GAR_LOCATION }}
-      gar_repo: ${{ vars.DEFAULT_GAR_REPOSITORY }}
-      image_name: moderate-api
-    secrets:
-      wif_provider: ${{ secrets.WIF_PROVIDER }}
-      wif_service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Log into registry ${{ env.REGISTRY }}
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v4
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v6
+        with:
+          images: ${{ env.REGISTRY }}/${{ github.repository_owner }}/moderate-docs
+          # Keep "latest" pointing at the tip of main; the default "auto"
+          # would also move it on every release tag push.
+          flavor: latest=false
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=sha,prefix=sha-
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: linux/amd64
 ```
 
 ### 🏗️ Step 4: Terraform Resources
