@@ -28,13 +28,13 @@ single PostgreSQL + PostGIS database. Two schemas partition the data by dataset 
 
 The stack is composed of five services:
 
-| Service | Public URL | Internal URL | Credentials |
-|---------|-----------|--------------|-------------|
-| PostgREST API | [dbsm-api.test.ctic.es](https://dbsm-api.test.ctic.es) | `http://localhost:3501` | None |
-| Swagger UI | [dbsm-swagger.test.ctic.es](https://dbsm-swagger.test.ctic.es) | `http://localhost:3504` | None |
-| GeoServer | [dbsm-geo.test.ctic.es/geoserver/web](https://dbsm-geo.test.ctic.es/geoserver/web) | `http://localhost:3503/geoserver/web` | `admin` / `geoserver` |
-| PgAdmin | [dbsm-admin.test.ctic.es](https://dbsm-admin.test.ctic.es) | `http://localhost:3502` | `user@domain.com` / `postgres` |
-| PostgreSQL | — (not exposed, binary protocol) | `localhost:3500` | `dbsm_admin` / `postgres` |
+| Service | Internal URL | Credentials |
+|---------|--------------|-------------|
+| PostgREST API | `http://localhost:3501` | None |
+| Swagger UI | `http://localhost:3504` | None |
+| GeoServer | `http://localhost:3503/geoserver/web` | `admin` / `geoserver` |
+| PgAdmin | `http://localhost:3502` | `user@domain.com` / `postgres` |
+| PostgreSQL | `localhost:3500` | `dbsm_admin` / `postgres` |
 
 The architecture and full setup guide are available in the
 [repository README](https://github.com/MODERATE-Project/DBSM_R2025_GeoService).
@@ -61,7 +61,7 @@ and click **Execute**. The response is displayed below with the status code and 
 > Functions that return building geometries can produce responses of tens of MB that
 > Swagger UI cannot render. To exclude the geometry column, append `?select=` to the URL:
 > ```
-> https://dbsm-api.test.ctic.es/rpc/buildings_in_bbox?select=fid,unique_id,source,area,height,use
+> http://localhost:3501/rpc/buildings_in_bbox?select=fid,unique_id,source,area,height,use
 > ```
 
 The available RPC functions are:
@@ -107,7 +107,7 @@ The v2 SLD style classifies buildings by height using five colour bands:
 The WMS endpoint pattern is:
 
 ```
-https://dbsm-geo.test.ctic.es/geoserver/dbsm_v2/ows?service=WMS&version=1.3.0&request=GetCapabilities
+http://localhost:3503/geoserver/dbsm_v2/ows?service=WMS&version=1.3.0&request=GetCapabilities
 ```
 
 ### QGIS Integration

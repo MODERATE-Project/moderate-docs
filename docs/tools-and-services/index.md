@@ -62,9 +62,6 @@ The _DBSM GeoService_ is a containerized geospatial microservice stack for manag
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/DBSM_R2025_GeoService)
 - :fontawesome-solid-book: &nbsp; [Documentation](dbsm.md)
-- :fontawesome-solid-up-right-from-square: &nbsp; [REST API](https://dbsm-api.test.ctic.es)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Swagger UI](https://dbsm-swagger.test.ctic.es)
-- :fontawesome-solid-up-right-from-square: &nbsp; [GeoServer](https://dbsm-geo.test.ctic.es/geoserver/web)
 
 ## 💰 Measurement and Verification Tool
 
