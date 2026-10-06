@@ -15,14 +15,12 @@ Benchmarking is a web tool that allows the comparison of building performances. 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/MODERATE_building_benchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking.md)
 - :fontawesome-solid-code: &nbsp; [Public application (development environment)](https://tools.eeb.eurac.edu/building_benchmarking/)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://building.staging.moderate.cloud/building_benchmarking/)
 
 ## 🧠 BrickLLM
 
 BrickLLM is a web application that generates RDF files conforming to the BrickSchema ontology by leveraging Large Language Models (LLMs). The application is built on top of the Python library BrickLLM.
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/EURAC-EEBgroup/BrickLLM-App)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://brick.staging.moderate.cloud/brickllm/)
 
 
 ## 📈 Contextual Anomaly Detector
@@ -56,7 +54,6 @@ A sensitivity analysis is also available to evaluate the impact of different clu
 Local Energy Communities (LECs) are pivotal in advancing building decarbonization, fostering social cohesion, and promoting the integration of renewable energy sources. This tool streamlines the establishment of LECs by pinpointing optimal locations for their formation, enabling stakeholders to efficiently identify viable LEC sites.
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/lec-location-assessment-tool)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://lec.staging.moderate.cloud/)
 - :fontawesome-solid-book: &nbsp; [Documentation](lec.md)
 
 ## 🗺️ DBSM R2025 GeoService
@@ -82,7 +79,6 @@ The _Solar Cadastre (SC)_ enables users to evaluate the solar energy potential o
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/MODERATE-Project/solar-cadastre)
 - :fontawesome-solid-book: &nbsp; [Documentation](solar-cadastre.md)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://solar.staging.moderate.cloud/)
 
 ## 🔍 Fault Detection and Forecasting
 
@@ -102,7 +98,6 @@ The _Timeseries-based Energy Benchmarking_ tool performs advanced benchmarking o
 
 - :fontawesome-brands-github: &nbsp; [Git repository](https://github.com/baeda-polito/TimeseriesEnergyBenchmarking)
 - :fontawesome-solid-book: &nbsp; [Documentation](benchmarking_timeseries.md)
-- :fontawesome-solid-up-right-from-square: &nbsp; [Public application](https://timeseries.staging.moderate.cloud/)
 
 ## ✅ Quality Check Report Tool
 

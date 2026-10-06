@@ -10,7 +10,6 @@ title: LEC tool
 
     Using machine learning techniques, the tool processes complex data to evaluate building potential, focusing on solar energy capabilities. Users can interact with a map-based interface, filter buildings, generate reports, and obtain detailed building and cadastral information. The tool aims to facilitate the development of LECs, supporting energy decarbonization and the transition to sustainable energy systems.
 
-
 ## Introduction
 
 A Local Energy Community (LEC) is a legal entity where various actors collaborate to meet their energy needs through shared production, transmission, and consumption. LECs play a pivotal role in the transition toward decarbonizing buildings, promoting social interaction, and integrating renewable energy sources. However, one of the main challenges in establishing a successful LEC is identifying the geographic areas where these communities can thrive. This is where the tool comes into play.
@@ -18,8 +17,6 @@ A Local Energy Community (LEC) is a legal entity where various actors collaborat
 The tool is designed to solve the complex problem of determining suitable areas for LECs by analyzing diverse datasets, such as energy consumption, cadastral information, and infrastructure details. Using machine learning techniques, it processes this information to provide actionable insights that help users define areas where LECs can be effectively implemented.
 
 By enabling the creation of LECs, the tool contributes to a more sustainable energy ecosystem, supporting decarbonization efforts and the wider adoption of renewable energy. It helps streamline energy management, making energy production and consumption more efficient within communities. Users who invest time in learning and using this tool gain the ability to identify optimal locations for LECs, contributing to environmental sustainability and community engagement, while simplifying a typically complex and data-intensive process.
-
-The tool is currently accessible at the following URL: [https://lec.staging.moderate.cloud/](https://lec.staging.moderate.cloud/)
 
 ## User Guide
 
@@ -129,7 +126,5 @@ The tool allows users to save or print the current view, which includes both the
 To save or print the current view, users can click the "Print" button next to the report button. This will generate a document that includes both the table and map views in their current state.
 
 ## References
-
-- Access to the tool: [https://lec.staging.moderate.cloud/](https://lec.staging.moderate.cloud/)
 
 - Spanish cadastre website: [https://www.sedecatastro.gob.es](https://www.sedecatastro.gob.es)
